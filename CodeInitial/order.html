@@ -5,27 +5,42 @@
   <title>OnlineShop - Commande</title>
 </head>
 <body>
-  <H3>Page de commande</H3>
-<!-- TODO -->
-  <form action="order.html" method="get">
-    <P>Contact</P>
-    <label for="fname">Prénom:</label>
-    <input type="text" id="firstname" name="fname" size="20" maxlength="40" required><br><br>
-    <label for="lname">Nom de famille:</label>
-    <input type="text" id="lastname" name="lname" size="20" maxlength="40" required><br><br>
-    <label for="email">Addresse courriel:</label>
-    <input type="email" id="email" name="email" required><br><br>
-    <label for="phonenumber">Numéro de téléphone</label>
-    <input type="tel" id="phone" name="phonenumber" required><br><br>
-  </form>
-  <form action="order.html" method="get">
-    <P>Paiement</P>
-    <label for="creditcard">Numéro de carte de crédit:</label>
-    <input type="text" id="firstname" name="fname" size="20" required><br><br>
-    <label for="cardexp">Date d'expiration de la carte:</label>
-    <input type="month" id="creditcardexpiry" name="cardexp" size="20" required><br><br>
-     <!--month/year & placeholder-->
-    <input type="submit" value="Payer"> <!--put a link to confirmation page-->
-  </form>
+  <header>
+    <!--Inclure Logo et liens vers index.html
+      Menu de navigation avec lien vers:
+    - Acceuil (index.html)
+    - Produits (products.html)
+    - Contact (contact.html)
+    - Panier (shopping-cart.html)-->
+      
+  </header>
+  <main>
+    <H3>Page de commande</H3>
+
+    <form action="order.html" method="get">
+      <P>Contact</P>
+      <label for="fname">Prénom:</label>
+      <input type="text" id="firstname" name="fname" size="20" maxlength="40" required><br><br>
+      <label for="lname">Nom de famille:</label>
+      <input type="text" id="lastname" name="lname" size="20" maxlength="40" required><br><br>
+      <label for="email">Addresse courriel:</label>
+      <input type="email" id="email" name="email" required><br><br>
+      <label for="phonenumber">Numéro de téléphone</label>
+      <input type="tel" id="phone" name="phonenumber" required><br><br>
+    </form>
+    <form action="order.html" method="get">
+      <P>Paiement</P>
+      <label for="creditcard">Numéro de carte de crédit:</label>
+      <input type="text" id="firstname" name="fname" size="20" required><br><br>
+      <label for="cardexp">Date d'expiration de la carte:</label>
+      <input type="month" id="creditcardexpiry" name="cardexp" size="20" required><br><br>
+      <!--month/year & placeholder-->
+      <input type="submit" value="Payer"> <!--put a link to confirmation page-->
+    </form>
+  </main>
+
+  <footer>
+    <!--informations de notre equipe (nom, prenom, matricule)-->
+  </footer>
 </body>
 </html>
