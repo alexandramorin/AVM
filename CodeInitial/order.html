@@ -8,36 +8,33 @@
   <header>
     <img src="/Users/MelissaLe/AVM/CodeInitial/assets/img/logo.svg" 
       alt="Logo" height="75px"/>
-    <!--Inclure Logo et liens vers index.html
-      Menu de navigation avec lien vers:
-    - Acceuil (index.html)
-    - Produits (products.html)
-    - Contact (contact.html)
-    - Panier (shopping-cart.html)-->
+    <a href="index.html">Accueil</a>
+    <a href="products.html">Produits</a>
+    <a href="contact.html">Contact</a>
+    <a href="shopping-cart.html">Panier</a>
       
   </header>
   <main>
-    <H3>Page de commande</H3>
+    <H2>Page de commande</H2>
 
-    <form action="order.html" method="get">
-      <P>Contact</P>
-      <label for="fname">Prénom:</label>
+    <form action="confirmation.html" method="get">
+      <P><b>Contact</b></P>
+      <label for="firstname">Prénom:</label>
       <input type="text" id="firstname" name="fname" size="20" maxlength="40" required><br><br>
-      <label for="lname">Nom de famille:</label>
+      <label for="lastname">Nom de famille:</label>
       <input type="text" id="lastname" name="lname" size="20" maxlength="40" required><br><br>
       <label for="email">Addresse courriel:</label>
       <input type="email" id="email" name="email" required><br><br>
-      <label for="phonenumber">Numéro de téléphone</label>
+      <label for="phone">Numéro de téléphone</label>
       <input type="tel" id="phone" name="phonenumber" required><br><br>
-    </form>
-    <form action="order.html" method="get">
-      <P>Paiement</P>
+    
+      <P><b>Paiement</b></P>
       <label for="creditcard">Numéro de carte de crédit:</label>
-      <input type="text" id="firstname" name="fname" size="20" required><br><br>
+      <input type="text" id="creditcard" name="ccard" size="20" pattern="" required><br><br>
       <label for="cardexp">Date d'expiration de la carte:</label>
       <input type="month" id="creditcardexpiry" name="cardexp" size="20" required><br><br>
-      <!--month/year & placeholder-->
-      <input type="submit" value="Payer"> <!--put a link to confirmation page-->
+      <!-- placeholder-->
+      <input type="submit" value="Payer">
     </form>
   </main>
 
