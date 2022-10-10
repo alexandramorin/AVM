@@ -21,19 +21,19 @@
     <form action="confirmation.html" method="get">
       <P><b>Contact</b></P>
       <label for="firstname">Prénom:</label>
-      <input type="text" id="firstname" name="fname" size="20" maxlength="40" required><br><br>
+      <input type="text" id="firstname" name="fname" size="20" maxlength="40" placeholder="Prénom" required><br><br>
       <label for="lastname">Nom de famille:</label>
-      <input type="text" id="lastname" name="lname" size="20" maxlength="40" required><br><br>
+      <input type="text" id="lastname" name="lname" size="20" maxlength="40" placeholder="Nom de famille" required><br><br>
       <label for="email">Addresse courriel:</label>
-      <input type="email" id="email" name="email" required><br><br>
+      <input type="email" id="email" name="email" placeholder="mike@gmail.com" required><br><br>
       <label for="phone">Numéro de téléphone</label>
-      <input type="tel" id="phone" name="phonenumber" required><br><br>
+      <input type="tel" id="phone" name="phonenumber" placeholder="438-987-6543" pattern="\d{3}-\d{3}-\d{4}"><br><br>
     
       <P><b>Paiement</b></P>
       <label for="creditcard">Numéro de carte de crédit:</label>
-      <input type="text" id="creditcard" name="ccard" size="20" pattern="" required><br><br>
-      <label for="cardexp">Date d'expiration de la carte:</label>
-      <input type="month" id="creditcardexpiry" name="cardexp" size="20" required><br><br>
+      <input type="text" id="creditcard" name="ccard" size="20" pattern="\d{4}\s\d{4}\s\d{4}\s\d{4}" placeholder="5000 1000 4000 5859" required><br><br>
+      <label for="creditcardexpiry">Date d'expiration de la carte:</label>
+      <input type="text" id="creditcardexpiry" name="cardexp" size="20" placeholder="mm/yy" pattern="[0-1][0-9]/[2][2-9]" required><br><br>
       <!-- placeholder-->
       <input type="submit" value="Payer">
     </form>
