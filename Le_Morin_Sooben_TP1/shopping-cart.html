@@ -5,66 +5,122 @@
   <meta charset="UTF-8">
   <title>OnlineShop - Panier</title>
 </head>
+<style>
+	.logo {
+    text-align: left; 
+}
+	.onglets {
+    color: white; text-align: right;
+}
+	.commander{
+    text-align: left; background-color: navy; color: white;
+}
+  .vider{
+    text-align: right; background-color: navy; color: white;
+}
+header {
+  background-color:navy;
+}
+
+body {
+  background-color:white ;
+}
+
+footer {
+  background-color: silver; text-align: center;
+}
+header {
+	font-family:sans-serif;
+}
+main {
+	font-family:sans-serif;
+}
+footer {
+	font-family:sans-serif;
+}
+	.tableau {
+    margin-left: auto;
+    margin-right: auto;
+}
+	.categories {
+    width: 25%;
+}
+	.center {
+    text-align: center;
+}
+	.right {
+    text-align: right;
+}
+	.left {
+    text-align: left;
+}
+</style>
 <body>
 <font color="black"> 
 <header>
+	<div class="logo">
     <img src="assets/img/logo.svg" 
       alt="Logo" height="75px"/>
+    </div>
+    <div class="onglets">
     <a href="index.html">Accueil</a>
     <a href="products.html">Produits</a>
     <a href="contact.html">Contact</a>
-    <a href="shopping-cart.html">Panier</a>   
+    <a href="shopping-cart.html">Panier</a>  
+    </div>
   </header>
   <main>
-  <h1> Panier: </h1>
+  <h1> Panier </h1>
   <fieldset>
-  <table>
+  <table class="tableau">
     <tr>
       <th> </th> <!-- espace pour mettre le x -->
-      <th>Nom</th>
-      <th>Prix unitaire</th>
-      <th>Quantité</th>
-      <th>Prix</th>
+      <th class="categories" class="left">Nom</th>
+      <th class="categories">Prix unitaire</th>
+      <th class="categories">Quantité</th>
+      <th class="categories" class="right">Prix</th>
     </tr>
     <tr>
       <td><form action="">
       	<input type="reset" value="x">
       </form></td>
       <td><a href="product.html">Apple TV</a></td>
-      <td>249.99$</td>
-      <td><button type="button" onclick="-1">-</button> 2 <button type="button" onclick="+1">+</button></td>
-      <td>499.98$</td>
+      <td class="center">249.99$</td>
+      <td class="center"><button type="button" onclick="-1">-</button> 2 <button type="button" onclick="+1">+</button></td>
+      <td class="right">499.98$</td>
     </tr>
     <tr>
       <td><form action="">
       	<input type="reset" value="x">
       </form></td>
       <td><a href="product.html">Canon EOS 5D Mark II</a></td>
-      <td>2999.99$</td>
-      <td><button type="button" onclick="-1">-</button> 1 <button type="button" onclick="+1">+</button></td>
-      <td>2999.99$</td>
+      <td class="center">2999.99$</td>
+      <td class="center"><button type="button" onclick="-1">-</button> 1 <button type="button" onclick="+1">+</button></td>
+      <td class="right">2999.99$</td>
     </tr>
     <tr>
       <td><form action="">
       <input type="reset" value="x">
       </form></td>
       <td><a href="product.html">Console Wii</a></td>
-      <td>199.99$</td>
-      <td><button type="button" onclick="-1">-</button> 15 <button type="button" onclick="+1">+</button></td>
-      <td>2999.85$</td>
+      <td class="center">199.99$</td>
+      <td class="center"><button type="button" onclick="-1">-</button> 15 <button type="button" onclick="+1">+</button></td>
+      <td class="right">2999.85$</td>
     </tr>
   </table>
   </fieldset>
-  <h4>Total: 6499.82 $</h4>
+  <h4 style="text-align: right;">Total: 6499.82 $</h4>
     <form action="">
-      <input type="reset" value="Vider le panier">
-      <a href="order.html">Commander</a>
+      <input type="reset" value="Vider le panier" class="vider">
+    </form>
+    <form action="">
+      <input type="reset" value="Commander" class="commander">
     </form>
 </font>
 </main>
   
 <footer>
-    <h4>Alexandra Morin (20236038), Vennila Sooben (20235256) et Melissa Le (20163210)</h4>
+    <p>Alexandra Morin (20236038), Vennila Sooben (20235256) et Melissa Le (20163210)</p>
   </footer>
 </body>
 </html>
