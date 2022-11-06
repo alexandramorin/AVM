@@ -1,0 +1,85 @@
+.header{
+    background-color: #14597f;
+    height: 60px;
+    padding: 0px 20px;
+    border-bottom: 1px solid #0b2d3d;
+}
+.content{
+    width: 1200px;
+}
+img nav{
+    display:flex;
+    justify-content:left;
+    height:10px;
+}
+nav{
+    /*position:relative;*/
+    width: 1200px;
+    display:flex;
+    justify-content:space-around;
+}
+
+a{
+    display:flex;
+    justify-content: space-between;
+    text-decoration: none;
+    color: white;
+}
+
+a>nav{
+    color: white;
+}
+a>nav.active{
+    background-color: #1fb5e9;
+    border-radius: 4px;
+}
+
+.fa-stack{
+    z-index:0;
+}
+
+.fa-shopping-cart{
+    color:#14597f;
+
+}
+.fa-circle{
+    color:white;
+}
+
+.count{
+    display:block;
+    width: fit-content;
+    height: fit-content;
+    color:white;
+    background-color:#d9534f;
+    padding: 15px;
+    border-radius: 20px;
+    margin-top: -25px;
+    margin-left: 25 px;
+    z-index:1;
+
+}
+
+
+.footer{
+    background-color: #eeeeee;
+    border-top:1px solid #cccccc;
+    height: 70px;
+    text-align: center;
+    /* centrer le texte verticallement */
+}
+
+.contact_columns{
+    float: left;
+    width: 33.33%;
+    border:1px #999999;
+    border-radius: 4px;
+    justify-content: center;
+}
+
+.contact_row{
+    content: "";
+    display: table;
+    clear: both;
+    
+}
