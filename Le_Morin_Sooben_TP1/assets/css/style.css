@@ -19,10 +19,10 @@ html, body{
     margin-bottom:-70px;
 }
 
-li, a{
+ a{
     font-family:sans-serif, Arial;
     font-size: 16px;
-    color: black;
+    color: white;
     text-decoration:none;
 }
 header{
@@ -45,6 +45,7 @@ header .content{
     padding: 0px 20px; 
     align-items: center;
 }
+
 .logo{
     height:45px; 
     margin-right: auto;
@@ -173,7 +174,10 @@ https://css-tricks.com/couple-takes-sticky-footer/ par Chris Coyier*/
     content: "";
     display: table;
     clear: both;
-    
+}
+
+.contact_columns a{
+    color:black;
 }
 /*Changer la grandeur des icones pour page contact.html*/
 .fa-mobile-alt, .fa-map-marker-alt, .fa-envelope{
@@ -220,4 +224,9 @@ https://css-tricks.com/couple-takes-sticky-footer/ par Chris Coyier*/
 .row input[type=submit]{
     float:right;
     margin-right:30px
+}
+
+blockquote a{
+    text-decoration: underline;
+    color:black;
 }
