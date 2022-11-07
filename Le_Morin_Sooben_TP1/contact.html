@@ -8,50 +8,63 @@
   <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 </head>
 <body>
-  <header>
-    <img src="assets/img/logo.svg" 
-      alt="Logo" height="75px"/>
-      <a class="link" href="./index.html">Accueil</a>
-      <a class="link" href="./products.html">Produits</a>
-      <a class="link" href="./contact.html">Contact</a>
-      <a class="shopping-cart" href="./shopping-cart.html" title="Panier">
-        <span class="fa-stack fa-lg">
-          <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
-          <i class="fa fa-shopping-cart fa-stack-1x"></i>
-        </span>
-        <span class="count">3</span>
-      </a>
-    <div></div>  
-  </header>
-  <main class="content">
-    <h2>Contact</h2>
-    <div class="contact_row">
-      <div class="contact_columns">
-      <a href="tel:438-987-6543">438-987-6543</a>
-      <i class="fa fa-mobile-alt"></i>
-    </div>
-    <div class="contact_columns">
-      <a href="https://www.google.com/maps/place/UdeM+%E2%80%93+Pavillon+Andr%C3%A9-Aisenstadt/@45.5010087,-73.6179665,17z/data=!3m2!4b1!5s0x4cc919f305fc39b7:0x4bc105cb93da2b74!4m5!3m4!1s0x4cc919f308df50f9:0x1c5cdca60001c62e!8m2!3d45.5010087!4d-73.6157778">2920 Ch de la Tour, Montréal, QC H3T 1N8</a>
-      <i class="fa fa-map-marker-alt"></i>
-    </div>
-    <div class="contact_columns">
-      <a href=”mailto:futurachat@gmail.com” title="Mail">Envoyer un mail </a>
-      <i class="fa fa-envelope"></i>
-    </div>
-    
-    <p>Pour nous contacter, <br><br>
-        
-        
-      </p>
-      <h3>Notre addresse:</h3>
-      
-    
-    </div>
-  </main>
-  
+  <div class="wrapper">
+    <header>
+        <div class="content">
+          <img class="logo" src="assets/img/logo.svg" alt="Logo"/>
+          <nav>
+            <ul class="nav_links">
+              <li><a href="./index.html">Accueil</a></li>
+              <li><a href="./products.html">Produits</a></li>
+              <li><a class="active" href="./contact.html">Contact</a></li>
+              <li><a class="shopping-cart" href="./shopping-cart.html" title="Panier">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                  <i class="fa fa-shopping-cart fa-stack-1x"></i>
+                </span>
+                <span class="count">3</span>
+              </a></li>
+          </ul>
+          </nav>
+      </div>
+    </header>
 
-  <footer>
-    <h4>Alexandra Morin (20236038), Vennila Sooben (20235256) et Melissa Le (20163210)</h4>
+    <main>
+      <div class="content">
+        <br>
+        <h2>Contact</h2> 
+        <br><br>
+        Pour nous contacter: 
+
+        <br><br>
+
+        <div class="contact_row">
+          <div class="contact_columns">
+          <i class="fa fa-mobile-alt"></i> <br>
+          <a href="tel:438-987-6543">Appelez-nous au 438-987-6543
+
+          </a>
+          
+        </div>
+
+        <div class="contact_columns">
+          <i class="fa fa-map-marker-alt"></i> <br>
+          <a href="https://www.google.com/maps/place/UdeM+%E2%80%93+Pavillon+Andr%C3%A9-Aisenstadt/@45.5010087,-73.6179665,17z/data=!3m2!4b1!5s0x4cc919f305fc39b7:0x4bc105cb93da2b74!4m5!3m4!1s0x4cc919f308df50f9:0x1c5cdca60001c62e!8m2!3d45.5010087!4d-73.6157778">
+            2920 Chemin de la Tour, <br>
+            Montréal, QC <br>
+            H3T 1N8</a>
+        </div>
+
+        <div class="contact_columns">
+          <i class="fa fa-envelope"></i> <br>
+          <a href=”mailto:futurachat@gmail.com” title="Mail">Envoyer un mail </a>
+      </div>    
+    </main>
+    <div class="push"></div>
+  </div>  
+
+  <footer class="footer">
+      <p>Alexandra Morin (20236038), Vennila Sooben (20235256) et Melissa Le (20163210)</p>
   </footer>
 </body>
 </html>

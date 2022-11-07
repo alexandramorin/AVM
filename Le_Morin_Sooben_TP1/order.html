@@ -4,44 +4,70 @@
 <head>
   <meta charset="UTF-8">
   <title>OnlineShop - Commande</title>
+  <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 </head>
 <body>
-  <header>
-    <img src="assets/img/logo.svg" 
-      alt="Logo" height="75px"/>
-    <a href="index.html">Accueil</a>
-    <a href="products.html">Produits</a>
-    <a href="contact.html">Contact</a>
-    <a href="shopping-cart.html">Panier</a>
-      
+  <div class="wrapper">
+    <header>
+      <div class="content">
+        <img class="logo" src="assets/img/logo.svg" alt="Logo"/>
+        <nav>
+          <ul class="nav_links">
+            <li><a href="./index.html">Accueil</a></li>
+            <li><a href="./products.html">Produits</a></li>
+            <li><a class="active" href="./contact.html">Contact</a></li>
+            <li><a class="shopping-cart" href="./shopping-cart.html" title="Panier">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                <i class="fa fa-shopping-cart fa-stack-1x"></i>
+              </span>
+              <span class="count">3</span>
+            </a></li>
+        </ul>
+        </nav>
+    </div>
   </header>
-  <main>
-    <H2>Page de commande</H2>
+    <main>
+      <div class="content">
+        <br>
+        <h2>Page de commande</h2> <br>
+        <form action="confirmation.html" method="get">
+          <div class="row">
+            <p><b>Contact</b></p> <br>
+            <div class="col">
+              <label for="firstname">Prénom:</label> <br>
+              <input class="form_box"  type="text" id="firstname" name="fname" size="20" placeholder="Prénom" required><br><br>
+              <label for="email">Addresse courriel:</label> <br>
+              <input class="form_box" type="email" id="email" name="email" placeholder="mike@gmail.com" required><br><br>
+            </div>
+            <div class="col">
+              <label for="lastname">Nom de famille:</label> <br>
+              <input class="form_box" type="text" id="lastname" name="lname" size="20" placeholder="Nom de famille" required><br><br>
+              <label for="phone">Numéro de téléphone</label> <br>
+              <input class="form_box" type="tel" id="phone" name="phonenumber" placeholder="438-987-6543" pattern="\d{3}-\d{3}-\d{4}"><br><br>
+            </div>
+          </div>
+          <div class="row">
+            <p><b>Paiement</b></p> <br>
+            <div class="col">
+              <label for="creditcard">Numéro de carte de crédit:</label> <br>
+              <input class="form_box" type="text" id="creditcard" name="ccard" pattern="\d{4}\s\d{4}\s\d{4}\s\d{4}" placeholder="5000 1000 4000 5859" required><br><br>
+            </div>
+            <div class="col">
+              <label for="creditcardexpiry">Date d'expiration de la carte:</label> <br>
+              <input class="form_box" type="text" id="creditcardexpiry" name="cardexp" placeholder="mm/yy" pattern="[0-1][0-9]/[2][2-9]" required><br><br>
+            </div>
+            <input class="btn" type="submit" value="Payer >>">
+          </div>
+        </form>
+      </div>
+    </main>
+    <div class="push"></div>
+  </div>
 
-    <form action="confirmation.html" method="get">
-      <P><b>Contact</b></P>
-      <label for="firstname">Prénom:</label>
-      <input type="text" id="firstname" name="fname" size="20" maxlength="40" placeholder="Prénom" required><br><br>
-      <label for="lastname">Nom de famille:</label>
-      <input type="text" id="lastname" name="lname" size="20" maxlength="40" placeholder="Nom de famille" required><br><br>
-      <label for="email">Addresse courriel:</label>
-      <input type="email" id="email" name="email" placeholder="mike@gmail.com" required><br><br>
-      <label for="phone">Numéro de téléphone</label>
-      <input type="tel" id="phone" name="phonenumber" placeholder="438-987-6543" pattern="\d{3}-\d{3}-\d{4}"><br><br>
-    
-      <P><b>Paiement</b></P>
-      <label for="creditcard">Numéro de carte de crédit:</label>
-      <input type="text" id="creditcard" name="ccard" size="20" pattern="\d{4}\s\d{4}\s\d{4}\s\d{4}" placeholder="5000 1000 4000 5859" required><br><br>
-      <label for="creditcardexpiry">Date d'expiration de la carte:</label>
-      <input type="text" id="creditcardexpiry" name="cardexp" size="20" placeholder="mm/yy" pattern="[0-1][0-9]/[2][2-9]" required><br><br>
-      <!-- placeholder-->
-      <input type="submit" value="Payer">
-    </form>
-  </main>
-
-  <footer>
-    <!--informations de notre equipe (nom, prenom, matricule)-->
-    <h4>Alexandra Morin (20236038), Vennila Sooben (20235256) et Melissa Le (20163210)</h4>
+  <footer class="footer">
+    <p>Alexandra Morin (20236038), Vennila Sooben (20235256) et Melissa Le (20163210)</p>
   </footer>
 </body>
 </html>

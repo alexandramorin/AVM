@@ -1,41 +1,87 @@
-.header{
+/**/
+
+/*Code CSS venant de https://www.youtube.com/watch?v=PwWHL3RyQgk, Skillthrive, 11:23-*/
+* {
+    box-sizing:border-box;
+    font-family: sans-serif, Arial;
+    color:black;
+    margin:0;
+    padding: 0;
+}
+
+html, body{
+    height:100%;
+    margin:0;
+}
+
+.wrapper{
+    min-height: 100%;
+    margin-bottom:-70px;
+}
+
+li, a{
+    font-family:sans-serif, Arial;
+    font-size: 16px;
+    color: black;
+    text-decoration:none;
+}
+header{
     background-color: #14597f;
     height: 60px;
-    padding: 0px 20px;
     border-bottom: 1px solid #0b2d3d;
+    
 }
+
 .content{
     width: 1200px;
+    align-items: center;
+    min-height:100%;
+    padding: 10px 20px; 
+    margin:auto;
 }
-img nav{
-    display:flex;
-    justify-content:left;
-    height:10px;
+header .content{
+    display: flex;
+    justify-content:flex-end;
+    padding: 0px 20px; 
+    align-items: center;
+}
+.logo{
+    height:45px; 
+    margin-right: auto;
+    
 }
 nav{
-    /*position:relative;*/
     width: 1200px;
-    display:flex;
-    justify-content:space-around;
+    padding: 0px 20px;
+    height: 60px;
+    color: white;
+   
+}
+.nav_links{
+    list-style: none;
+    color: white;
+    padding: 0px 20px;
 }
 
-a{
-    display:flex;
-    justify-content: space-between;
-    text-decoration: none;
-    color: white;
+.nav_links li{
+    display:inline-block;
+    padding: 0px 20px;
 }
 
-a>nav{
-    color: white;
+.nav-links li a{
+    color:white;
+    align-items: center;
 }
-a>nav.active{
-    background-color: #1fb5e9;
+
+.active{
     border-radius: 4px;
+    background-color: #1fb5e9;
+    padding: 10px;
 }
-
+/*Attributs CSS pour l'icone du panier*/
 .fa-stack{
     z-index:0;
+    
 }
 
 .fa-shopping-cart{
@@ -52,34 +98,126 @@ a>nav.active{
     height: fit-content;
     color:white;
     background-color:#d9534f;
-    padding: 15px;
+    padding: 5px 9px;
     border-radius: 20px;
-    margin-top: -25px;
-    margin-left: 25 px;
+    margin-top: -12px;
+    margin-left: 23px;
+    position: sticky;
     z-index:1;
-
+    font-size:12px;
 }
 
+/*Attributs CSS pour les boutons*/
+.btn{
+    background-color: #14597f;
+    border: 1px solid #0b2d3d;
+    border-radius: 4px;
+    padding: 8px;
+    color:white;
+    width:fit-content;
+    
+}
+.btn:hover{
+    background-color: #1fb5e9;
+    transition: all 0.2s ease-out, 1s;
+}
 
+#home{
+    float:right;
+    margin-top: -180px;
+}
+/*Attributs CSS pour le pied de page, en utilisant comme reference de code 
+https://css-tricks.com/couple-takes-sticky-footer/ par Chris Coyier*/
+
+.footer, .push{
+    height:70px;
+}
 .footer{
     background-color: #eeeeee;
     border-top:1px solid #cccccc;
     height: 70px;
     text-align: center;
-    /* centrer le texte verticallement */
+    color:black;
+    
+}
+.footer p{
+    padding:25px 0px;
+    width:1200px;
+    align-items: center;
+    margin:auto;
 }
 
+/*Style specifique pour certaines pages*/
+
+/*Style specifique pour la page de contact.html*/
 .contact_columns{
     float: left;
     width: 33.33%;
-    border:1px #999999;
-    border-radius: 4px;
     justify-content: center;
+    font-family: sans-serif ;
+    color:black;
+    text-align: center;
+    margin: 75px 0px;
+}
+.contact_columns a{
+    text-decoration: revert;
 }
 
 .contact_row{
+    align-content: center;
+    border:1px solid #999999;
+    border-radius: 4px;
+    justify-content: center;
+}
+.contact_row:after{
     content: "";
     display: table;
     clear: both;
     
+}
+/*Changer la grandeur des icones pour page contact.html*/
+.fa-mobile-alt, .fa-map-marker-alt, .fa-envelope{
+    font-size:75px;
+}
+
+/* Style CSS pour les formulaires (product.html et order.html)*/
+.row{
+    align-content: center;
+    justify-content:center;
+
+}
+.col{
+    float:left;
+    width:50%;
+    justify-content: center;
+    font-family: sans-serif ;
+    color:black;
+    text-align: left;
+
+}
+.form_box{
+    border: 1px solid #999999;
+    border-radius: 4px;
+}
+.col input{
+    width:95%;
+    height:30px;
+    margin: 10px 0px;
+}
+
+.add{
+    display:flex;
+    justify-content:right;
+    align-items: center;
+    
+}
+
+.add input{
+    width:fit-content;
+    margin-right:0px;
+   
+}
+.row input[type=submit]{
+    float:right;
+    margin-right:30px
 }

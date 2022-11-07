@@ -8,31 +8,40 @@
    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 </head>
 <body>
-  <header class="header">
-    <nav>
-      <div class="logo">
-        <img src="assets/img/logo.svg" alt="Logo"/> </div>
-      <div> 
-        <a class="link" href="./index.html">Accueil</a>
-        <a class="link" href="./products.html">Produits</a>
-        <a class="link" href="./contact.html">Contact</a>
-        <a class="shopping-cart" href="./shopping-cart.html" title="Panier">
-          <span class="fa-stack fa-lg">
-            <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
-            <i class="fa fa-shopping-cart fa-stack-1x"></i>
-          </span>
-          <span class="count">3</span>
-        </a>
-      </nav>
-    </div>  
-  </header>
-  <main>
-    <h2>Bienvenue!</h2>
-    <p>Bonjour! Bienvenue sur le site OnlineShop, le meilleur site pour tous vos besoins technologiques!</p>
-    <a href="products.html"><b>Pour voir tous nos produits</b></a> <br>
-    <img src= "assets/img/home.png" alt="Image d'accueil" height="300 px">
-    
-  </main>
+  <div class="wrapper">
+    <header>
+      <div class="content">
+        <img class="logo" src="assets/img/logo.svg" alt="Logo"/>
+        <nav>
+          <ul class="nav_links">
+            <li><a class="active" href="./index.html">Accueil</a></li>
+            <li><a href="./products.html">Produits</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a class="shopping-cart" href="./shopping-cart.html" title="Panier">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                <i class="fa fa-shopping-cart fa-stack-1x"></i>
+              </span>
+              <span class="count">3</span>
+            </a></li>
+        </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="content">
+        <br>
+        <h2>Bienvenue sur le site OnlineShop,</h2>
+        <br><br>
+        <p>Le meilleur site pour tous vos besoins technologiques!</p>
+        <br><br>
+        <a class="btn" href="products.html">Pour voir tous nos produits >></a> <br><br>
+        <img id="home" src= "assets/img/home.png" alt="Image d'accueil" height="300 px">
+      </div>
+    </main>
+    <div class="push"></div>
+  </div>
 
   <footer class="footer">
     <p>Alexandra Morin (20236038), Vennila Sooben (20235256) et Melissa Le (20163210)</p>
