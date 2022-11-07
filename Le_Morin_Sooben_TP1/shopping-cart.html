@@ -4,6 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <title>OnlineShop - Panier</title>
+  <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 </head>
 <style>
 	.logo {
@@ -27,7 +29,8 @@ body {
 }
 
 footer {
-  background-color: silver; text-align: center;
+  background-color: silver; 
+  text-align: center;
 }
 header {
 	font-family:sans-serif;
@@ -37,6 +40,7 @@ main {
 }
 footer {
 	font-family:sans-serif;
+    padding: 70px;
 }
 	.tableau {
     margin-left: auto;
@@ -54,68 +58,92 @@ footer {
 	.left {
     text-align: left;
 }
+	.caterogieright {
+    text-align: right;
+    width: 25%;
+}
+	.empty{
+	display: flex;
+	justify-content:space-between;
+}
+	.circle{
+	height: fit-content;
+    width: fit-content;
+    padding:0px 5px;
+    border-radius:20px;
+    border: solid 1px silver;
+    font-weight: bold;
+}
 </style>
 <body>
 <font color="black"> 
-<header>
-	<div class="logo">
-    <img src="assets/img/logo.svg" 
-      alt="Logo" height="75px"/>
-    </div>
-    <div class="onglets">
-    <a href="index.html">Accueil</a>
-    <a href="products.html">Produits</a>
-    <a href="contact.html">Contact</a>
-    <a href="shopping-cart.html">Panier</a>  
-    </div>
-  </header>
+<div class="wrapper">
+    <header>
+      <div class="content">
+        <img class="logo" src="assets/img/logo.svg" alt="Logo"/>
+        <nav>
+          <ul class="nav_links">
+            <li><a class="active" href="./index.html">Accueil</a></li>
+            <li><a href="./products.html">Produits</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a class="shopping-cart" href="./shopping-cart.html" title="Panier">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                <i class="fa fa-shopping-cart fa-stack-1x"></i>
+              </span>
+              <span class="count">3</span>
+            </a></li>
+        </ul>
+        </nav>
+      </div>
+    </header>
   <main>
   <h1> Panier </h1>
-  <fieldset>
   <table class="tableau">
     <tr>
       <th> </th> <!-- espace pour mettre le x -->
       <th class="categories" class="left">Nom</th>
       <th class="categories">Prix unitaire</th>
       <th class="categories">Quantité</th>
-      <th class="categories" class="right">Prix</th>
+      <th class="caterogieright">Prix</th>
     </tr>
+    <hr>
     <tr>
       <td><form action="">
-      	<input type="reset" value="x">
+      	<input class="circle" type="reset" value="x">
       </form></td>
       <td><a href="product.html">Apple TV</a></td>
       <td class="center">249.99$</td>
-      <td class="center"><button type="button" onclick="-1">-</button> 2 <button type="button" onclick="+1">+</button></td>
+      <td class="center"><button type="button" class="circle" onclick="-1">-</button> 2 <button type="button" class="circle" onclick="+1">+</button></td>
       <td class="right">499.98$</td>
     </tr>
     <tr>
       <td><form action="">
-      	<input type="reset" value="x">
+      	<input class="circle" type="reset" value="x">
       </form></td>
       <td><a href="product.html">Canon EOS 5D Mark II</a></td>
       <td class="center">2999.99$</td>
-      <td class="center"><button type="button" onclick="-1">-</button> 1 <button type="button" onclick="+1">+</button></td>
+      <td class="center"><button type="button" class="circle" onclick="-1">-</button> 1 <button type="button" class="circle" onclick="+1">+</button></td>
       <td class="right">2999.99$</td>
     </tr>
     <tr>
       <td><form action="">
-      <input type="reset" value="x">
+      <input class="circle" type="reset" value="x">
       </form></td>
       <td><a href="product.html">Console Wii</a></td>
       <td class="center">199.99$</td>
-      <td class="center"><button type="button" onclick="-1">-</button> 15 <button type="button" onclick="+1">+</button></td>
+      <td class="center"><button type="button" class="circle" onclick="-1">-</button> 15 <button type="button" class="circle" onclick="+1">+</button></td>
       <td class="right">2999.85$</td>
     </tr>
   </table>
-  </fieldset>
+  <hr>
   <h4 style="text-align: right;">Total: 6499.82 $</h4>
-    <form action="">
+    <form class="empty" action="">
       <input type="reset" value="Vider le panier" class="vider">
-    </form>
-    <form action="">
       <input type="reset" value="Commander" class="commander">
     </form>
+<div>
+</div>
 </font>
 </main>
   
