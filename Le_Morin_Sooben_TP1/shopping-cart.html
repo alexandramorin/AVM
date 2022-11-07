@@ -58,15 +58,19 @@ footer {
 	.left {
     text-align: left;
 }
-	.caterogieright {
+	.categorieright {
     text-align: right;
     width: 25%;
 }
-	.empty{
+	.categorieleft {
+    text-align: left;
+    width: 25%;
+}
+	.empty {
 	display: flex;
 	justify-content:space-between;
 }
-	.circle{
+	.circle {
 	height: fit-content;
     width: fit-content;
     padding:0px 5px;
@@ -74,8 +78,12 @@ footer {
     border: solid 1px silver;
     font-weight: bold;
 }
-	.bluetext{
+	.bluetext {
 	color: blue;
+    text-decoration: none;
+}
+	.total {
+    text-align: right;
 }
 </style>
 <body>
@@ -105,10 +113,10 @@ footer {
   <table class="tableau">
     <tr>
       <th> </th> <!-- espace pour mettre le x -->
-      <th class="categories" class="left">Nom</th>
+      <th class="categorieleft">Nom</th>
       <th class="categories">Prix unitaire</th>
       <th class="categories">Quantité</th>
-      <th class="caterogieright">Prix</th>
+      <th class="categorieright">Prix</th>
     </tr>
     <hr>
     <tr>
@@ -140,7 +148,7 @@ footer {
     </tr>
   </table>
   <hr>
-  <h4 style="text-align: right;">Total: 6499.82 $</h4>
+  <p class="total">Total:<p/><h4 class="total"> 6499.82 $</h4>
     <form class="empty" action="">
       <input type="reset" value="Vider le panier" class="vider">
       <input type="reset" value="Commander" class="commander">
