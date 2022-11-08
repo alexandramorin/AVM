@@ -63,6 +63,10 @@ nav{
     list-style: none;
     color: white;
     float:right;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 100px 100px 100px 50px;
+    grid-template-rows: 30px;
 }
 
 .nav_links li{
@@ -81,9 +85,19 @@ nav{
     padding: 10px;
 }
 /*Attributs CSS pour l'icone du panier*/
+/* Pour que l'icone soit aligné avec les autres onglets*/
+.special{
+    margin-top: -12px;
+}
+.shopping-cart{
+    vertical-align: middle;
+    text-align: center;
+}
+
 .fa-stack{
     z-index:0;
-    
+    vertical-align: middle;
+    text-align: center;
 }
 
 .fa-shopping-cart{
@@ -102,8 +116,8 @@ nav{
     background-color:#d9534f;
     padding: 5px 9px;
     border-radius: 20px;
-    margin-top: -12px;
-    margin-left: 23px;
+    margin-top: -18px;
+    margin-left: 30px;
     position: sticky;
     z-index:1;
     font-size:12px;
