@@ -6,21 +6,20 @@
   <meta name="keywords" content="computers">
   <title>OnlineShop - Panier</title>
   <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
-  <link rel="stylesheet" type="text/css" href="./Le_Morin_Sooben_TP1/assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 </head>
   
-<body>
-<font color="black"> 
-<div class="wrapper">
+<body> 
+  <div class="wrapper">
     <header>
       <div class="content">
-        <img class="logo" src="./Le_Morin_Sooben_TP1/assets/img/logo.svg" alt="Logo"/>
+        <img class="logo" src="./assets/img/logo.svg" alt="Logo"/>
         <nav>
           <ul class="nav_links">
-            <li><a class="active" href="./Le_Morin_Sooben_TP1/index.html">Accueil</a></li>
-            <li><a href="./Le_Morin_Sooben_TP1/products.html">Produits</a></li>
-            <li><a href="./Le_Morin_Sooben_TP1/contact.html">Contact</a></li>
-            <li class="special"><a class="shopping-cart" href="./Le_Morin_Sooben_TP1/shopping-cart.html" title="Panier">
+            <li><a class="active" href="./index.html">Accueil</a></li>
+            <li><a href="./products.html">Produits</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li class="special"><a class="shopping-cart" href="./shopping-cart.html" title="Panier">
               <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
                 <i class="fa fa-shopping-cart fa-stack-1x"></i>
@@ -31,59 +30,62 @@
         </nav>
       </div>
     </header>
-  <main>
-  <h1> Panier </h1>
-  <table class="tableau">
-    <tr>
-      <th> </th> <!-- espace pour mettre le x -->
-      <th class="categorieleft">Nom</th>
-      <th class="categories">Prix unitaire</th>
-      <th class="categories">Quantité</th>
-      <th class="categorieright">Prix</th>
-    </tr>
-    <hr>
-    <tr>
-      <td><form action="">
-      	<input class="circle" type="reset" value="x">
-      </form></td>
-      <td><a href="product.html" class="bluetext">Apple TV</a></td>
-      <td class="center">249.99$</td>
-      <td class="center"><button type="button" class="circle" onclick="-1">-</button> 2 <button type="button" class="circle" onclick="+1">+</button></td>
-      <td class="right">499.98$</td>
-    </tr>
-    <tr>
-      <td><form action="">
-      	<input class="circle" type="reset" value="x">
-      </form></td>
-      <td><a href="product.html" class="bluetext">Canon EOS 5D Mark II</a></td>
-      <td class="center">2999.99$</td>
-      <td class="center"><button type="button" class="circle" onclick="-1">-</button> 1 <button type="button" class="circle" onclick="+1">+</button></td>
-      <td class="right">2999.99$</td>
-    </tr>
-    <tr>
-      <td><form action="">
-      <input class="circle" type="reset" value="x">
-      </form></td>
-      <td><a href="product.html" class="bluetext">Console Wii</a></td>
-      <td class="center">199.99$</td>
-      <td class="center"><button type="button" class="circle" onclick="-1">-</button> 15 <button type="button" class="circle" onclick="+1">+</button></td>
-      <td class="right">2999.85$</td>
-    </tr>
-  </table>
-  <hr>
-  <p class="total">Total: <b>6499.82 $</b></p>
-    <form class="empty" action="">
-      <input type="reset" value="Vider le panier" class="vider">
-      <input type="reset" value="Commander" class="commander">
-    </form>
+    <main class="content">
+      <br>
+      <h1> Panier </h1>
+      <br>
+      <table class="tableau">
+        <tr>
+          <th> </th> <!-- espace pour mettre le x -->
+          <th class="categorieleft">Nom</th>
+          <th class="categories">Prix unitaire</th>
+          <th class="categories">Quantité</th>
+          <th class="categorieright">Prix</th>
+        </tr>
+        <hr>
+        <tr>
+          <td><form action="">
+            <input class="circle" type="reset" value="x">
+          </form></td>
+          <td><a href="product.html" class="bluetext">Apple TV</a></td>
+          <td class="center">249.99$</td>
+          <td class="center"><button type="button" class="circle" onclick="-1">-</button> 2 <button type="button" class="circle" onclick="+1">+</button></td>
+          <td class="right">499.98$</td>
+        </tr>
+        <tr>
+          <td><form action="">
+            <input class="circle" type="reset" value="x">
+          </form></td>
+          <td><a href="product.html" class="bluetext">Canon EOS 5D Mark II</a></td>
+          <td class="center">2999.99$</td>
+          <td class="center"><button type="button" class="circle" onclick="-1">-</button> 1 <button type="button" class="circle" onclick="+1">+</button></td>
+          <td class="right">2999.99$</td>
+        </tr>
+        <tr>
+          <td><form action="">
+          <input class="circle" type="reset" value="x">
+          </form></td>
+          <td><a href="product.html" class="bluetext">Console Wii</a></td>
+          <td class="center">199.99$</td>
+          <td class="center"><button type="button" class="circle" onclick="-1">-</button> 15 <button type="button" class="circle" onclick="+1">+</button></td>
+          <td class="right">2999.85$</td>
+        </tr>
+      </table>
+      <hr>
+      <br>
+      <p class="total">Total: <b>6499.82 $</b></p>
+      <br>
+      <form class="empty" action="">
+        <input type="reset" class="btn" value="Vider le panier">
+        <input type="reset" class="btn" value="Commander >>">
+      </form>
+ 
+  <div class="push"></div>
 <div>
-</div>
-</font>
 </main>
 </div>
- <div class="footer"</div> 
-<footer>
+<footer class="footer">
     <p>Alexandra Morin (20236038), Vennila Sooben (20235256) et Melissa Le (20163210)</p>
-  </footer>
+</footer>
 </body>
 </html>
