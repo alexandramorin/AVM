@@ -1,179 +1,163 @@
+<!--Products-->
 <!--Alexandra Morin (20236038), Vennila Sooben (20235256) et Melissa Le (20163210)-->
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8">
+
+ <head>
+  <link rel="stylesheet" type="text/css" href=".assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  
   <title>OnlineShop - Produits</title>
+ 
 </head>
-  <header>
-    <img src= "assets/img/logo.svg" alt="Logo" height="75px"/>
-    <a href="index.html">Accueil</a>
-    <a href="products.html">Produits</a>
-    <a href="contact.html">Contact</a>
-    <a href="shopping-cart.html">Panier</a>
- </header>
+
+
 <body>
+  <div class="PRODUCTS">
+  <div class="wrapper">
+    <header>
+        <div class="content">
+          <img class="logo" src=".assets/img/logo.svg" alt="Logo"/>
+          <nav>
+            <ul class="nav_links">
+              <li><a href=".index.html">Accueil</a></li>
+              <li><a href=".products.html">Produits</a></li>
+              <li><a href=".contact.html">Contact</a></li>
+              <li><a class="shopping-cart" href=".shopping-cart.html" title="Panier">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                  <i class="fa fa-shopping-cart fa-stack-1x"></i>
+                </span>
+                <span class="count">3</span>
+              </a></li>
+          </ul>
+          </nav>
+      </div>
+    </header>
 
-<div>
-<h2 align="left"><u>Produits</u></h2>
-</div>
-
-
-<table border="0"; width="1400"; height="400">
-
-
-
-<tr>
-
-
-
-<td> 
-
-
-<div class="CRITERIAS">
- <div class="product-categories" >
- 
- <table border="1", width="200", height="150">
-  <h4>Categories</h4>
-  <td><button >Appareils Photo</button></td>
- 
-  <tr>
-  <td><button>Consoles</button></td>
- 
-  <tr>
-  <td><button>Ecrans</button></td>
- 
-  <tr>
-  <td><button >Ordinateurs</button></td>
- 
- </table>
- <br>
- </div>
-
- <h4> Criteres </h4>
- <table border="1", width="200", height="150">
- <div class="product-criterias" >
-  <td><button> Prix (bas-haut)</button></td>
-  <tr></tr>
-  <td><button> Prix (haut-bas)</button></td>
-  <tr></tr>
-  <td><button > Nom (A-Z)</button></td>
-  <br>
-  <tr></tr>
-  <td><button> Nom (Z-A)</button></td>
- </div>
- </table>
-</div>
+<main>
+  <div class="content">
+     
+   
 
 
 
 
+    <div class="CRITERIAS">
+
+      <div class="selected_products" >
+
+        <h4>Catégories</h4>
+
+        <br>
+          <button >Appareils Photo</button>
+        
+          <button>Consoles</button>
+        
+          <button>Écrans</button>
+        
+          <button >Ordinateurs</button>
+        
+          <button>Tous les produits</button>
+      </div>
+
+      
+
+      <div class="selected_products" >
+       <div class="classement">
+        <h4> Classement </h4>
+        <br>
+        
+
+        <button> Prix (bas-haut)</button>
+
+        <button> Prix (haut-bas)</button>
+
+        <button> Nom (A-Z)</button>
+        
+        <button> Nom (Z-A)</button>
+      </div>
+
+      </div>
+
+    </div>
 
 
+<div class="products_page">
+  <h2 align="left" id="prod">Produits</h2>
+  <h4 align="right" id="num">13 produits</h4>
 
-<div>
+  <div class="case_products">
+  <a href=".product.html">
+    <h4> Apple TV </h4>
 
-  <td><h4> Apple TV </h4>
+    <img src=".assets/img/apple-tv.png" </a> width="250" height="250" alt="appareil Apple TV"  >
+      </img>
+    <h5 class ="price_products"> Prix 249.99 $ </h5>
+  </a>
+  </div>
+
+  <div class="case_products"><h4>Canon EOS 5D Mark II</h4>
+
+
+    <img src=".assets/img/camera-1.png"width="250"
+      height="250" alt="Caméra Canon EOS 5D Mark II" ></img>
+
+    <h5 class="price_products"> Prix 2999.99 $ </h5>
+
+  </div>
+  <div class="case_products"><h4>Console Wii</h4>
   
+    <img src=".assets/img/wii.png"width="250"
+      height="250" alt="console Wii" ></img>
+
+    <h5 class="price_products"> Prix 199.99 $</h5>
+
+  </div>
+
+  <div class="case_products"><h4>Console PS3 </h4>
  
-  
-    <img src="assets/img/apple-tv.png" width="250" height="250" alt="appareil Apple TV" />
-  <h5> 249.99</h5>
+    <img id="hello" src=".assets/img/ps3.png"width="250"
+     height="250" alt="Console Playstation 3 (PS3)"></img>
 
+    <h5 class="price_products"> Prix 249.99 $</h5>
+
+  </div>
+
+  <div class="case_products"> <h4>iMac 27</h4>
+    <img id="hello" src=".assets/img/mac.png"width="250"
+    height="250" alt="Ordinateur iMac 27 pouces" ></img>
+
+    <h5 class="price_products"> Prix 2299.99 $</h5>
+
+  </div>
+
+  <div class="case_products">
+    <h4> Console Xbox One </h4>
+
+    <img id="hello" src="./assets/img/xbox.png"width="250"
+     height="250" alt="Console Xbox One" ></img>
+
+  <h5 class="price_products"> Prix 399.99 $</h5>
+  </div>
+
+  </div>
 </div>
 
-
-
-<div>
-
-<td><h4>Canon EOS 5D Mark II</h4>
-
-
-    <img src="assets/img/camera-1.png"width="250"
-     height="250" alt="Caméra Canon EOS 5D Mark II" />
-
-  <h5> 2999.99 </h5>
-
-
+</main>
+<div class="push"></div>
 </div>
 
-<div>
-
-  <td><h4>Console Wii</h4>
-  
-
-
-    <img src="assets/img/wii.png"width="250"
-     height="250" alt="console Wii" />
-
-  <h5> 199.99</h5>
-
-
-
 </div>
+<footer class="footer">
 
-<tr>
-
-<td>
-
-<div>
-
-
-
-
- <td><h4> Console PS3 </h4>
- 
-
-
-    <img src="assets/img/ps3.png"width="250"
-     height="250" alt="Console Playstation 3 (PS3)" />
-
-  <h5> 249.99</h5>
-
-
-
-</div>
-
-<div>
-
-
- <td> <h4> iMac 27</h4>
- 
-
-
-    <img src="assets/img/mac.png"width="250"
-     height="250" alt="Ordinateur iMac 27 pouces" />
-
-  <h5> 2299.99</h5>
-
-</div>
-
-
-
-<div>
-
-
-
- <td> <h4> Console Xbox One      </h4>
-
-    <img src="assets/img/xbox.png"width="250"
-     height="250" alt="Console Xbox One" />
-
-  <h5> 399.99 </h5>
-
-
-</div>
-
-</table>
- 
-</body>
-
-<footer>
-  <h4>Alexandra Morin (20236038), Vennila Sooben (20235256) et Melissa Le (20163210)</h4>
+  <p>Alexandra Morin (20236038), Vennila Sooben (20235256) et Melissa Le (20163210)</p>
 
 </footer>
 
-
+</body>
 
 </html>
 
