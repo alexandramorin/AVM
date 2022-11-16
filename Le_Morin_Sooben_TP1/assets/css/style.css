@@ -142,6 +142,11 @@ nav{
     float:right;
     margin-top: -180px;
 }
+
+/* changement de couleur pour le panier plus*/
+.fa-cart-plus{
+    color:white;
+}
 /*Attributs CSS pour le pied de page, en utilisant comme reference de code 
 https://css-tricks.com/couple-takes-sticky-footer/ par Chris Coyier*/
 
@@ -250,6 +255,10 @@ https://css-tricks.com/couple-takes-sticky-footer/ par Chris Coyier*/
 blockquote a{
     text-decoration: underline;
     color:black;
+}
+
+.characteristics{
+    padding-left: 30px;
 }
 
 /* Style CSS pour shopping cart et page de confirmation*/
