@@ -257,10 +257,10 @@ blockquote a{
     color: white; text-align: right;
 }
 	.commander{
-    text-align: left; background-color: navy; color: white;
+    text-align: left; background-color: #14597f; color: white;
 }
-  .vider{
-    text-align: right; background-color: navy; color: white;
+         .vider{
+    text-align: right; background-color: #14597f; color: white;
 }
 body {
   background-color:white ;
