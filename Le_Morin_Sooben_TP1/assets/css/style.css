@@ -253,9 +253,6 @@ blockquote a{
 }
 
 /* Style CSS pour shopping cart et page de confirmation*/
-.logo {
-    text-align: left; 
-}
 	.onglets {
     color: white; text-align: right;
 }
@@ -268,26 +265,8 @@ blockquote a{
 body {
   background-color:white ;
 }
-
-footer {
-  background-color: silver; 
-  text-align: center;
-}
 main {
 	font-family:sans-serif;
-}
-footer {
-	font-family:sans-serif;
-    padding: 70px;
-}
-footer {
-	position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: silver;
-    color: black;
-  text-align: center;
 }
 	.tableau {
     margin-left: auto;
@@ -314,11 +293,11 @@ footer {
     width: 25%;
 }
 	.empty {
-	display: flex;
-	justify-content:space-between;
+     display: flex;
+     justify-content:space-between;
 }
 	.circle {
-	height: fit-content;
+    height: fit-content;
     width: fit-content;
     padding:0px 5px;
     border-radius:20px;
@@ -326,7 +305,7 @@ footer {
     font-weight: bold;
 }
 	.bluetext {
-	color: blue;
+    color: blue;
     text-decoration: none;
 }
 	.total {
