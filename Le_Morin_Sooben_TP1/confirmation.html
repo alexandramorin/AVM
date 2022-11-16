@@ -4,45 +4,28 @@
 <head>
   <meta charset="UTF-8">
   <title>OnlineShop - Confirmation</title>
-</head>
-<style>
-div[logo] {text-align: left; }
-
-div[onglets]{color: white; text-align: right;}
-header {
-  background-color:navy;
-}
-
-body {
-  background-color:white ;
-}
-
-footer {
-  background-color: silver; text-align: center;
-}
-header {
-	font-family:sans-serif
-}
-main {
-	font-family:sans-serif
-}
-footer {
-	font-family:sans-serif
-}
-</style>
+  <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+  <link rel="stylesheet" type="text/css" href="./Le_Morin_Sooben_TP1/assets/css/style.css">
 <body>
 <font color="black">
 <header>
-	<div class="logo">
-    <img src="assets/img/logo.svg" 
-      alt="Logo" height="75px"/>
-    </div>
-    <div class="onglets">
-    <a href="index.html">Accueil</a>
-    <a href="products.html">Produits</a>
-    <a href="contact.html">Contact</a>
-    <a href="shopping-cart.html">Panier</a>
-    </div>
+    <div class="content">
+        <img class="logo" src="./Le_Morin_Sooben_TP1/assets/img/logo.svg" alt="Logo"/>
+        <nav>
+          <ul class="nav_links">
+            <li><a class="active" href="./Le_Morin_Sooben_TP1/index.html">Accueil</a></li>
+            <li><a href="./Le_Morin_Sooben_TP1/products.html">Produits</a></li>
+            <li><a href="./Le_Morin_Sooben_TP1/contact.html">Contact</a></li>
+            <li><a class="shopping-cart" href="./Le_Morin_Sooben_TP1/shopping-cart.html" title="Panier">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                <i class="fa fa-shopping-cart fa-stack-1x"></i>
+              </span>
+              <span class="count">3</span>
+            </a></li>
+        </ul>
+        </nav>
+      </div>
   </header>
 <main>
 <h1>Confirmation de commande #74939</h1>
