@@ -311,3 +311,259 @@ main {
 	.total {
     text-align: right;
 }
+
+
+
+/*Attributs CSS pour la page Produits*/
+
+/*Attribut pour faire monter les criteres*/
+.CRITERIAS{
+margin-top: -5%;
+
+}
+
+/*Attribut pour faire les cases*/
+.products_page{
+
+
+    max-width:80%;
+    
+    min-height: 80%;
+  
+    display: flex;
+  
+    flex-wrap: wrap;
+   
+  }
+
+  .classement{
+
+    margin-top:10%;
+
+}
+  
+  .products_page div{
+  
+    display:block;
+    margin:1%;
+    line-height: 20%;
+  
+  }
+  
+  
+  .case_products:hover {
+  
+    background-color: #f3f3f3;
+    transition-timing-function: ease-out;
+    
+  
+  }
+  
+  .products_page{
+    
+          margin-top: -37.5%;
+          margin-left: 25%;
+        padding-bottom: 2%;
+     
+  
+      }
+    
+ 
+
+
+ 
+
+/*Attribut pour faire l'emplacement des boutonst*/
+.CRITERIAS{
+margin-top: -5%;
+
+}
+  .classement{
+
+    margin-top:10%;
+
+}
+  
+  
+    .products_page > div {
+  
+      
+  
+      background-color: white;
+     
+      
+      font-size: medium;
+      
+  
+  
+    }
+
+  .price_products{
+  font-size:medium;
+  font-weight: 300;
+      text-align: right;
+      margin: 65px 10px 10px -35px;
+  
+  }
+  
+  
+  .case_products {
+  
+      border: 0.5mm solid grey ;
+      margin: 20px;
+      border-radius: 4px;
+  
+  
+  
+  }
+  
+  
+  .case_products:hover {
+  
+    background-color: #f3f3f3;
+    transition-timing-function: ease-out;
+    
+  
+  }
+  
+ 
+  
+/*Attribut pour faire les cases individuelles de chauqes produits*/ 
+  
+    .products_page > div {
+  
+      
+  
+      background-color: white;
+     
+      
+      font-size: medium;
+      
+  
+  
+    }
+  
+    
+    .case_products {
+  
+  
+  
+      border: 0.5mm solid grey ;}
+  
+  
+    .products_page h4{
+  
+    text-align: left;
+  
+      margin-top:5%;
+  
+    }
+   
+    
+    .products_page img{
+        
+        margin-bottom: -20%;
+          max-width: 100%;
+          max-height: 95%;
+          padding: 5px;
+      
+      }
+     .price_products{
+  font-size:medium;
+  font-weight: 300;
+      text-align: right;
+      margin: 65px 10px 10px -35px;
+  
+  }
+  
+  
+  .case_products {
+  
+      border: 0.5mm solid grey ;
+      margin: 20px;
+      border-radius: 4px;
+  
+  
+  
+  }
+
+  .classement{
+
+    margin-top:-15%
+
+
+  }
+  
+  
+ /*Attribut pour les titres : 1. Produits et 2. 13 produits*/ 
+  #prod{
+  
+  position:absolute;
+  text-align: left;
+  top: 12%;
+  font-size: x-large;
+  overflow: hidden;
+  }
+  
+  #num{
+  
+    position: absolute;
+    left:80%;
+    bottom:85%;
+    
+    overflow: hidden;
+    }
+  
+  
+/*Attribut pour les boutons*/ 
+
+   .selected_products button {
+      min-width: 90%;
+      text-align: left;
+      font-size: medium;
+      background-color: rgb(255, 255, 255); 
+      border: 1px solid #999999;
+      padding: 2px;
+      
+      border-radius: 4px; 
+      color: black;
+      padding: 10px 15px; 
+      cursor: pointer; 
+  
+      display:table;
+  
+     
+    }
+    
+  
+   
+    
+    .selected_products button:hover {
+      background-color: #f3f3f3;
+      transition-timing-function: ease-out;
+    }
+  
+  .selected_products button:active{
+          background-color: #ddf2fb;
+      
+  }
+  .selected_products button:focus{
+    background-color: #ddf2fb;
+
+}
+
+
+  
+  .selected_products{
+    margin-left: -5px;
+  
+    margin-top: 85px;
+  
+    margin-right: 10px;
+  
+    max-width:25%;
+  
+    
+  
+  
+  }
