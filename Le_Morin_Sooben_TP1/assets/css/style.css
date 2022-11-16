@@ -251,3 +251,84 @@ blockquote a{
     text-decoration: underline;
     color:black;
 }
+
+/* Style CSS pour shopping cart et page de confirmation*/
+.logo {
+    text-align: left; 
+}
+	.onglets {
+    color: white; text-align: right;
+}
+	.commander{
+    text-align: left; background-color: navy; color: white;
+}
+  .vider{
+    text-align: right; background-color: navy; color: white;
+}
+body {
+  background-color:white ;
+}
+
+footer {
+  background-color: silver; 
+  text-align: center;
+}
+main {
+	font-family:sans-serif;
+}
+footer {
+	font-family:sans-serif;
+    padding: 70px;
+}
+footer {
+	position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: silver;
+    color: black;
+  text-align: center;
+}
+	.tableau {
+    margin-left: auto;
+    margin-right: auto;
+}
+	.categories {
+    width: 25%;
+}
+	.center {
+    text-align: center;
+}
+	.right {
+    text-align: right;
+}
+	.left {
+    text-align: left;
+}
+	.categorieright {
+    text-align: right;
+    width: 25%;
+}
+	.categorieleft {
+    text-align: left;
+    width: 25%;
+}
+	.empty {
+	display: flex;
+	justify-content:space-between;
+}
+	.circle {
+	height: fit-content;
+    width: fit-content;
+    padding:0px 5px;
+    border-radius:20px;
+    border: solid 1px silver;
+    font-weight: bold;
+}
+	.bluetext {
+	color: blue;
+    text-decoration: none;
+}
+	.total {
+    text-align: right;
+}
