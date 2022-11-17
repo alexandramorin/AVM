@@ -490,13 +490,6 @@ margin-top: -5%;
   
   
   }
-
-  .classement{
-
-    margin-top:-15%
-
-
-  }
   
   
  /*Attribut pour les titres : 1. Produits et 2. 13 produits*/ 
@@ -520,7 +513,7 @@ margin-top: -5%;
   
   
 /*Attribut pour les boutons*/ 
-
+/*Premier groupe de boutons*/
    .selected_products button {
       min-width: 90%;
       text-align: left;
@@ -536,27 +529,16 @@ margin-top: -5%;
   
       display:table;
   
-     
     }
-    
-  
-   
     
     .selected_products button:hover {
-      background-color: #f3f3f3;
-      transition-timing-function: ease-out;
+        background-color: #f3f3f3;
+        transition-timing-function: ease-out;
     }
   
-  .selected_products button:active{
-          background-color: #ddf2fb;
-      
-  }
-  .selected_products button:focus{
-    background-color: #ddf2fb;
-
-}
-
-
+    .selected_products button:last-child{
+        background-color: #ddf2fb;
+    }
   
   .selected_products{
     margin-left: -5px;
@@ -567,7 +549,44 @@ margin-top: -5%;
   
     max-width:25%;
   
-    
-  
-  
   }
+
+/*Deuxième group de boutons*/
+.selected_ranking button {
+    min-width: 90%;
+    text-align: left;
+    font-size: medium;
+    background-color: rgb(255, 255, 255); 
+    border: 1px solid #999999;
+    padding: 2px;
+    
+    border-radius: 4px; 
+    color: black;
+    padding: 10px 15px; 
+    cursor: pointer; 
+
+    display:table;
+
+    }
+
+    .selected_ranking button:hover {
+        background-color: #f3f3f3;
+        transition-timing-function: ease-out;
+    }
+
+    
+    .selected_ranking button:focus{
+        background-color: #ddf2fb;
+  
+    }
+
+    .selected_ranking{
+        margin-left: -5px;
+      
+        margin-top: 85px;
+      
+        margin-right: 10px;
+      
+        max-width:25%;
+      
+      }

@@ -63,24 +63,23 @@
       </div>
 
       
+  
 
-    <div class="selected_products" >
-      <div class="classement">
-        <h4> Classement </h4>
-        <br>
-        
-
-        <button> Prix (bas-haut)</button>
-
-        <button> Prix (haut-bas)</button>
-
-        <button> Nom (A-Z)</button>
-        
-        <button> Nom (Z-A)</button>
-      </div>
-
-      </div>
-
+        <div class="selected_ranking">
+          <h4> Classement </h4>
+          <br>
+  
+          <button> Prix (bas-haut)</button>
+  
+          <button> Prix (haut-bas)</button>
+  
+          <button> Nom (A-Z)</button>
+          
+          <button> Nom (Z-A)</button>
+        </div>
+  
+     
+  
     </div>
 
 
@@ -88,32 +87,24 @@
   <h2 align="left" id="prod">Produits</h2>
   <h4 align="right" id="num">13 produits</h4>
 
-  <div class="case_products">
-  <a href="product.html">
-    <h4> Apple TV </h4>
-
-    <img src="./assets/img/apple-tv.png" width="250" height="250" alt="appareil Apple TV"  >
-      </img>
-    <h5 class ="price_products"> Prix 249.99 $ </h5>
-  </a>
-  </div>
-
-  <div class="case_products"><h4>Canon EOS 5D Mark II</h4>
-
-
-    <img src="./assets/img/camera-1.png"width="250"
-      height="250" alt="Caméra Canon EOS 5D Mark II" ></img>
-
-    <h5 class="price_products"> Prix 2999.99 $ </h5>
-
-  </div>
-  <div class="case_products"><h4>Console Wii</h4>
+  <!--Ordre des produits selon prix le plus bas au plus haut-->
+   <div class="case_products"><h4>Console Wii</h4>
   
     <img src="./assets/img/wii.png"width="250"
       height="250" alt="console Wii" ></img>
 
     <h5 class="price_products"> Prix 199.99 $</h5>
 
+  </div>
+  
+  <div class="case_products">
+    <a href="product.html">
+    <h4> Apple TV </h4>
+
+    <img src="./assets/img/apple-tv.png" width="250" height="250" alt="appareil Apple TV"  >
+      </img>
+    <h5 class ="price_products"> Prix 249.99 $ </h5>
+    </a>
   </div>
 
   <div class="case_products"><h4>Console PS3 </h4>
@@ -125,6 +116,15 @@
 
   </div>
 
+  <div class="case_products">
+    <h4> Console Xbox One </h4>
+
+    <img id="hello" src="./assets/img/xbox.png"width="250"
+     height="250" alt="Console Xbox One" ></img>
+
+    <h5 class="price_products"> Prix 399.99 $</h5>
+  </div>
+
   <div class="case_products"> <h4>iMac 27</h4>
     <img id="hello" src="./assets/img/mac.png"width="250"
     height="250" alt="Ordinateur iMac 27 pouces" ></img>
@@ -133,13 +133,13 @@
 
   </div>
 
-  <div class="case_products">
-    <h4> Console Xbox One </h4>
+  <div class="case_products"><h4>Canon EOS 5D Mark II</h4>
 
-    <img id="hello" src="./assets/img/xbox.png"width="250"
-     height="250" alt="Console Xbox One" ></img>
+    <img src="./assets/img/camera-1.png"width="250"
+      height="250" alt="Caméra Canon EOS 5D Mark II" ></img>
 
-  <h5 class="price_products"> Prix 399.99 $</h5>
+    <h5 class="price_products"> Prix 2999.99 $ </h5>
+
   </div>
 
   </div>
