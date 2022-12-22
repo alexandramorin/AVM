@@ -1,1 +1,3 @@
-window.localStorage;
+let count = 0;
+let cart={};
+

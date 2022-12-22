@@ -261,6 +261,15 @@ blockquote a{
     padding-left: 30px;
 }
 
+#message{
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    justify-content: center;
+    height:fit-content;
+    padding: 8px;
+}
+
 /* Style CSS pour shopping cart et page de confirmation*/
 	.onglets {
     color: white; text-align: right;

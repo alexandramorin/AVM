@@ -15,13 +15,6 @@
     }, 
     {
         "id": 3,
-        "name": "Canon EOS 5D Mark II",
-        "price": 2999.99,
-        "total-amount":"",
-        "quantity":""   
-    },
-    {
-        "id": 3,
         "name": "Nikon D7000",
         "price": 549.99,
         "total-amount":"",
