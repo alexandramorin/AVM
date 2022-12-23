@@ -1,3 +1,6 @@
+
+
+
 function start(){
 
 //Code provenant de  https://www.sitepoint.com/get-url-parameters-with-javascript/
@@ -82,7 +85,7 @@ function(data){
          items.push('<label for="quantity">Quantité:</label> &nbsp;')
          items.push('<input class="form-box" type="number" id="quantity" name="quantity" min="1" step="1" value="1" required> &nbsp;')
          items.push('<button class="btn" onclick="generateSticker()"><i class="fas fa-cart-plus"></i> &nbsp; Ajouter>></button>')
-         items.push('</form>')
+         items.push('</form><div id="message"><p>Le produit a été ajouté au panier.</p></div>')
          
       
          items.push('</div></div></div></main><div class="push"></div></div></div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><footer class="footer"><p>\
@@ -154,9 +157,18 @@ if (c!=null){
   localStorage.setItem(finalval, qua);
 }
 
+let msg=document.getElementById("message")
+
+msg.style.display=""
+
+
+setTimeout(() => { msg.style.display="none"; }, 5000);
+
+
 
 }
 start();
+
 //Pour permettre au DOM de load
-setTimeout(() => {  
+setTimeout(() => { let msg=document.getElementById("message"); msg.style.display="none" 
 }, 5);
