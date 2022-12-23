@@ -262,6 +262,8 @@ blockquote a{
 
 .characteristics{
     padding-left: 30px;
+    padding-inline: 30px;
+width: 630px;
 }
 
 #message{
