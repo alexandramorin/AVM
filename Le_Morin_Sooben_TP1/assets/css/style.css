@@ -208,6 +208,7 @@ https://css-tricks.com/couple-takes-sticky-footer/ par Chris Coyier*/
 .row{
     align-content: center;
     justify-content:center;
+    margin-top: -1%;
 
 }
 .col{
@@ -221,8 +222,9 @@ https://css-tricks.com/couple-takes-sticky-footer/ par Chris Coyier*/
 }
 
 .col img{
-    width: 100%;
-    height: 100%;
+    width: 400px;
+    height: 400px;
+    margin-left: 25%;
 }
 
 .form_box{
@@ -239,6 +241,7 @@ https://css-tricks.com/couple-takes-sticky-footer/ par Chris Coyier*/
     display:flex;
     justify-content:right;
     align-items: center;
+    margin-right: 22%;
     
 }
 
@@ -452,7 +455,36 @@ margin-top: -5%;
       margin-top:5%;
   
     }
+
+hr{
+
+margin-top: 1%;
+margin-left: -5%;
+width:580px;
+border-top: dashed 1px;
+
+}
+    .price_product{
+
+        margin-top: 4%;
+        margin-left: -4%;
+
+
+
+    }
    
+
+
+    .name_product {
+        display: block;
+        font-size: 1.5em;
+        margin-block-start: 0.83em;
+        margin-block-end: 0.83em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+        margin-left: 10%;
+        }
     
     .products_page img{
         
