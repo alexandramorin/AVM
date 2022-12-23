@@ -16,7 +16,7 @@ let addAll=[];
 function alldone(){
    
     
-    $.getJSON("/assets/data/products.json", 
+    $.getJSON("assets/data/products.json", 
 
     function(data){
 
