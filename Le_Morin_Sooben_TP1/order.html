@@ -32,31 +32,31 @@
       <div class="content">
         <br>
         <h2>Page de commande</h2> <br>
-        <form action="confirmation.html" method="get" id="order-form">
+        <form action="confirmation.html" method="push" id="order-form">
           <div class="row">
             <p><b>Contact</b></p> <br>
             <div class="col">
               <label for="firstname">Prénom:</label> <br>
-              <input class="form_box"  type="text" id="firstname" name="fname" placeholder="Prénom"><br><br>
+              <input class="form_box"  type="text" id="firstname" name="firstname" placeholder="Prénom"><br><br>
               <label for="email">Addresse courriel:</label> <br>
               <input class="form_box" type="email" id="email" name="email" placeholder="mike@gmail.com"><br><br>
             </div>
             <div class="col">
               <label for="lastname">Nom de famille:</label> <br>
-              <input class="form_box" type="text" id="lastname" name="lname" size="20" placeholder="Nom de famille" ><br><br>
+              <input class="form_box" type="text" id="lastname" name="lastname" size="20" placeholder="Nom de famille" ><br><br>
               <label for="phone">Numéro de téléphone</label> <br>
-              <input class="form_box" type="tel" id="phone" name="phonenumber" placeholder="438-987-6543"><br><br>
+              <input class="form_box" type="tel" id="phone" name="phone" placeholder="438-987-6543"><br><br>
             </div>
           </div>
           <div class="row">
             <p><b>Paiement</b></p> <br>
             <div class="col">
               <label for="creditcard">Numéro de carte de crédit:</label> <br>
-              <input class="form_box" type="text" id="creditcard" name="ccard" placeholder="5000 1000 4000 5859" ><br><br>
+              <input class="form_box" type="text" id="creditcard" name="creditcard" placeholder="5000 1000 4000 5859" ><br><br>
             </div>
             <div class="col">
               <label for="creditcardexpiry">Date d'expiration de la carte:</label> <br>
-              <input class="form_box" type="text" id="creditcardexpiry" name="cardexp" placeholder="mm/yy" ><br><br>
+              <input class="form_box" type="text" id="creditcardexpiry" name="creditcardexpiry" placeholder="mm/yy" ><br><br>
             </div>
             <input class="btn" type="submit" value="Payer >>">
           </div>
@@ -69,10 +69,10 @@
   <footer class="footer">
     <p>Alexandra Morin (20236038), Vennila Sooben (20235256) et Melissa Le (20163210)</p>
   </footer>
-  <script type="text/javascript" src="./assets/js/jquery-3.2.1.min.js"></script>
-  <script type="text/javascript" src="./assets/js/jquery.validate.min.js"></script>
-  <script type="text/javascript" src="./assets/js/additional-methods.min.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery."></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/additional-methods.min.js"></script>
   <script type="text/javascript" src="./assets/js/messages_fr.js"></script>
-  <script type="text/javascript" src="./assets/scripts/order.js"></script>
+  <script src="./assets/scripts/order.js"></script>
 </body>
 </html>

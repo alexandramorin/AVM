@@ -273,6 +273,9 @@ blockquote a{
     padding: 8px;
 }
 
+form .error{
+    color: red;
+}
 /* Style CSS pour shopping cart et page de confirmation*/
 	.onglets {
     color: white; text-align: right;
