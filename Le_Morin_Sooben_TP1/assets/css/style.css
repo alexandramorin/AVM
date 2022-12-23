@@ -274,6 +274,20 @@ width: 630px;
     justify-content: center;
     height:fit-content;
     padding: 8px;
+    width:260px;
+    height:50px;
+    margin-left: -20%;
+    margin-top:10%;
+ 
+ 
+}
+
+#message p{
+color: white;
+text-align: center;
+margin-top: 3%;
+
+
 }
 
 form .error{
