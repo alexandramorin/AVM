@@ -34,6 +34,7 @@ $(document).ready(function(){
         submitHandler: function(form) {
             form.submit();
         }
+        // on submit, need to keep the first and last name as well as the order number in local storage, remove all items in cart
 
     })
     
