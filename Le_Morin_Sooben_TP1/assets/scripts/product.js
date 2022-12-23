@@ -135,9 +135,25 @@ function generateSticker(){
     e.preventDefault();
 });
 
-var quantity = document.getElementById('quantity').value;
 
-localStorage.setItem(finalval, quantity);
+
+c=localStorage.getItem(finalval)
+
+if (c==null){
+  var quant = document.getElementById('quantity').value;
+  localStorage.setItem(finalval, quant);
+}
+if (c!=null){
+  var quantity = document.getElementById('quantity').value;
+  console.log(quantity)
+
+  let qua=parseInt(quantity)
+  let c1=parseInt(c)
+  qua=qua+c1
+
+  localStorage.setItem(finalval, qua);
+}
+
 
 }
 start();
