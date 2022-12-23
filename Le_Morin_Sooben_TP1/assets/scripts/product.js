@@ -1,5 +1,9 @@
+function start(){
+
 //Code provenant de  https://www.sitepoint.com/get-url-parameters-with-javascript/
 //
+
+
 const queryString = window.location.search;
 console.log(queryString);
 
@@ -12,6 +16,7 @@ console.log(ids);
 items=[]
 
 $.getJSON("assets/data/products.json", 
+
 
 function(data){
 
@@ -42,14 +47,22 @@ function(data){
       <div class="row">\
         <br></br>\
         ');
-let boo=false
+        let boo=false
+        let pass="t"
+        finalval="hrllo";
         $.each(data, function (key, val) {
         
          m=val.id+""
 
          if (m==ids){
            
-         boo=true                                      
+         boo=true  
+         pass="f"
+
+         finalval=val.name 
+
+   
+
          items.push('<h2 class="name_product">'+val.name+'</h2><div class="col">')
          items.push('<img src="./assets/img/'+val.image+'" height="400px"/></div><div class="col">')
          items.push('<h3>Description</h3><br>')
@@ -65,19 +78,13 @@ let boo=false
        
         
          items.push('<br><hr class="line_product"><p class="price_product">Prix: <strong>'+val.price+' $</strong></p>')
-         items.push('<form class="add" action="" method="get" id="add-to-cart-form">')
+         items.push('<form class="add" id="add-to-cart-form">')
          items.push('<label for="quantity">Quantité:</label> &nbsp;')
          items.push('<input class="form-box" type="number" id="quantity" name="quantity" min="1" step="1" value="1" required> &nbsp;')
-         items.push('<button class="btn"><i class="fas fa-cart-plus"></i> &nbsp; Ajouter>></button>')
+         items.push('<button class="btn" onclick="generateSticker()"><i class="fas fa-cart-plus"></i> &nbsp; Ajouter>></button>')
          items.push('</form>')
          
       
-         
-
-        
-
-
-
          items.push('</div></div></div></main><div class="push"></div></div></div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><footer class="footer"><p>\
               Alexandra Morin (20236038), Vennila Sooben (20235256) et Melissa Le (20163210)</p></footer>\
               </body>');
@@ -94,7 +101,7 @@ let boo=false
             
          });
 
-         if (boo==false){
+         if (boo==false && pass=="f"){
 
 
             items.push('<h2>Page non trouvée!</h2><div class="col">')
@@ -109,10 +116,31 @@ let boo=false
             }).appendTo("body");
 
           
-
+           
          }
 
+         
+        
+
 })
-function addtoCart(){
+}
+
+function generateSticker(){
+
+
+
+  //https://stackoverflow.com/questions/19454310/stop-form-refreshing-page-on-submit
+
+  $(".add").submit(function(e) {
+    e.preventDefault();
+});
+
+var quantity = document.getElementById('quantity').value;
+
+localStorage.setItem(finalval, quantity);
 
 }
+start();
+//Pour permettre au DOM de load
+setTimeout(() => {  
+}, 5);
