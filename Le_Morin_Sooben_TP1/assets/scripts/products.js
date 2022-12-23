@@ -148,7 +148,7 @@ function alldone(){
 
       
 
-              items.push('</div></div></div></main><div class="push"></div></div></div><br><br><br><br><br><br><br><br><br><footer class="footer"><p>\
+              items.push('</div></div></div></main><div class="push"></div></div></div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><footer class="footer"><p>\
               Alexandra Morin (20236038), Vennila Sooben (20235256) et Melissa Le (20163210)</p></footer>\
               </body>');
 
