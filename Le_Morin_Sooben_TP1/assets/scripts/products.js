@@ -1,5 +1,6 @@
 //Code javascript pour la page Products.html
 
+//id=#'+val.id+'"/><h4>'
 
 const cam=3;
 const con=4;
@@ -678,12 +679,15 @@ if (rev==1){
                            
                        }
 
-    // Code provenant de Stack Overflow pour trier independamment des majuscules et minuscules      
-       //https://stackoverflow.com/questions/8996963/how-to-perform-case-insensitive-sorting-array-of-string-in-javascript
-              
-               newP.sortsort(function (a, b) {
+               
+               // Code pour trier en fonction des integers et non alphabetiquement
+               //https://stackoverflow.com/questions/1063007/how-to-sort-an-array-of-integers-correctly
+               newP.sort(function (a, b) {
                 return a.toLowerCase().localeCompare(b.toLowerCase());
             });
+
+
+
 if (rev==3){
                          newP.reverse()
                         }
@@ -767,4 +771,6 @@ if (rev==3){
 
                 };
             }, 5);
+ 
+
  
