@@ -64,7 +64,7 @@ let boo=false
          }
        
         
-         items.push('<br><hr><p class="price_product">Prix: <strong>'+val.price+' $</strong></p>')
+         items.push('<br><hr class="line_product"><p class="price_product">Prix: <strong>'+val.price+' $</strong></p>')
          items.push('<form class="add" action="" method="get" id="add-to-cart-form">')
          items.push('<label for="quantity">Quantité:</label> &nbsp;')
          items.push('<input class="form-box" type="number" id="quantity" name="quantity" min="1" step="1" value="1" required> &nbsp;')
