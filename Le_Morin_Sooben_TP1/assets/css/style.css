@@ -131,6 +131,7 @@ nav{
     padding: 8px;
     color:white;
     width:fit-content;
+	margin-right: -120px;
     
 }
 .btn:hover{
