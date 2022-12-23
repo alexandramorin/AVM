@@ -1,5 +1,6 @@
 //Code javascript pour la page Products.html
 
+//id=#'+val.id+'"/><h4>'
 
 const cam=3;
 const con=4;
@@ -70,7 +71,7 @@ function alldone(){
     
         $.each(data, function (key, val) {
                                                  
-                  items.push('<div class="case_products ' + val.category+ '" id="' + val.id+'"><a href="./product.html?id=#'+val.id+'"/><h4>'
+                  items.push('<div class="case_products ' + val.category+ '" id="' + val.id+'"><a href="./product.html?id='+val.id+'"/><h4>'
                        + val.name + '</h4>');
 
                   items.push('<img src="./assets/img/'
@@ -86,12 +87,12 @@ function alldone(){
 
                        if (val.category=="computers") {
 
-                        addCom.push('<div class="case_products ' + val.category+ '" id="' + val.id+'"><a href="./product.html?id=#'+val.id+'"/><h4>'
+                        addCom.push('<div class="case_products ' + val.category+ '" id="' + val.id+'"><a href="./product.html?id='+val.id+'"/><h4>'
                         + val.name + '</h4>'+'<img src="./assets/img/'+ val.image + '"width="250" height="250"></img>'+
                         '<h5 class="price_products"> Prix '
                         + val.price + ' $ </h5></div>');
 
-                        addAll.push('<div class="case_products ' + val.category+ '" id="' + val.id+'"><a href="./product.html?id=#'+val.id+'"/><h4>'
+                        addAll.push('<div class="case_products ' + val.category+ '" id="' + val.id+'"><a href="./product.html?id='+val.id+'"/><h4>'
                         + val.name + '</h4>'+'<img src="./assets/img/'+ val.image + '"width="250" height="250"></img>'+
                         '<h5 class="price_products"> Prix '
                         + val.price + ' $ </h5></div>');
@@ -100,12 +101,12 @@ function alldone(){
 
                        if (val.category=="cameras") {
 
-                        addCam.push('<div class="case_products ' + val.category+ '" id="' + val.id+'"><a href="./product.html?id=#'+val.id+'"/><h4>'
+                        addCam.push('<div class="case_products ' + val.category+ '" id="' + val.id+'"><a href="./product.html?id='+val.id+'"/><h4>'
                                 + val.name + '</h4>'+'<img src="./assets/img/'+ val.image + '"width="250" height="250"></img>'+
                                 '<h5 class="price_products"> Prix '
                                 + val.price + ' $ </h5></div>');
 
-                                addAll.push('<div class="case_products ' + val.category+ '" id="' + val.id+'"><a href="./product.html?id=#'+val.id+'"/><h4>'
+                                addAll.push('<div class="case_products ' + val.category+ '" id="' + val.id+'"><a href="./product.html?id='+val.id+'"/><h4>'
                                 + val.name + '</h4>'+'<img src="./assets/img/'+ val.image + '"width="250" height="250"></img>'+
                                 '<h5 class="price_products"> Prix '
                                 + val.price + ' $ </h5></div>');
@@ -114,12 +115,12 @@ function alldone(){
 
                         if (val.category=="consoles") {
 
-                            addCon.push('<div class="case_products ' + val.category+ '" id="' + val.id+'"><a href="./product.html?id=#'+val.id+'"/><h4>'
+                            addCon.push('<div class="case_products ' + val.category+ '" id="' + val.id+'"><a href="./product.html?id='+val.id+'"/><h4>'
                             + val.name + '</h4>'+'<img src="./assets/img/'+ val.image + '"width="250" height="250"></img>'+
                             '<h5 class="price_products"> Prix '
                             + val.price + ' $ </h5></div>');
 
-                            addAll.push('<div class="case_products ' + val.category+ '" id="' + val.id+'"><a href="./product.html?id=#'+val.id+'"/><h4>'
+                            addAll.push('<div class="case_products ' + val.category+ '" id="' + val.id+'"><a href="./product.html?id='+val.id+'"/><h4>'
                             + val.name + '</h4>'+'<img src="./assets/img/'+ val.image + '"width="250" height="250"></img>'+
                             '<h5 class="price_products"> Prix '
                             + val.price + ' $ </h5></div>');
@@ -128,12 +129,12 @@ function alldone(){
 
                             if (val.category=="screens") {
 
-                                addScr.push('<div class="case_products ' + val.category+ '" id="' + val.id+'"><a href="./product.html?id=#'+val.id+'"/><h4>'
+                                addScr.push('<div class="case_products ' + val.category+ '" id="' + val.id+'"><a href="./product.html?id='+val.id+'"/><h4>'
                                 + val.name + '</h4>'+'<img src="./assets/img/'+ val.image + '"width="250" height="250"></img>'+
                                 '<h5 class="price_products"> Prix '
                                 + val.price + ' $ </h5></div>');
 
-                                addAll.push('<div class="case_products ' + val.category+ '" id="' + val.id+'"><a href="./product.html?id=#'+val.id+'"/><h4>'
+                                addAll.push('<div class="case_products ' + val.category+ '" id="' + val.id+'"><a href="./product.html?id='+val.id+'"/><h4>'
                                 + val.name + '</h4>'+'<img src="./assets/img/'+ val.image + '"width="250" height="250"></img>'+
                                 '<h5 class="price_products"> Prix '
                                 + val.price + ' $ </h5></div>');
