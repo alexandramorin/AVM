@@ -8,7 +8,11 @@ $(document).ready(function(){
     
     $registerForm.validate({
         rules: {
-            firstname, lastname:{
+            firstname:{
+                required: true,
+                minlength: 2
+            },
+            lastname:{
                 required: true,
                 minlength: 2
             },
@@ -28,14 +32,16 @@ $(document).ready(function(){
             creditcardexpiry:{
                 required: true,
                 expirydate: true
-                
             }
         }, 
-        submitHandler: function(form) {
+        /*submitHandler: function(form) {
             form.submit();
-        }
+        }*/
         // on submit, need to keep the first and last name as well as the order number in local storage, remove all items in cart
 
+    })
+    $registerForm.submit(function(e) {
+        e.preventDefault();
     })
     
     
