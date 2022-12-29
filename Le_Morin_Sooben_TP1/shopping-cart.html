@@ -31,6 +31,11 @@
       </div>
     </header>
     <main>
+      <script>
+        var quantiteAppleTV = 1
+        var quantiteCanon = 1
+        var quantiteConsole = 1
+      </script>
       <div class="content">
         <br>
         <h1> Panier </h1>
@@ -44,47 +49,91 @@
             <th class="categorieright">Prix</th>
           </tr>
           <hr>
-          <tr>
+          <tr class="row">
             <td><form action="">
-              <input class="circle" type="reset" value="x">
+              <input class="circle remove-item-button" type="reset" value="x">
             </form></td>
             <td><a href="product.html" class="bluetext">Apple TV</a></td>
-            <td class="center">249.99$</td>
-            <td class="center"><button type="button" class="circle" onclick="-1">-</button> 2 <button type="button" class="circle" onclick="+1">+</button></td>
-            <td class="right">499.98$</td>
+            <td class="center prices">249.99$</td>
+            <td class="center"><button type="button" class="circle remove-quantity-button quantity" onclick="removeQuantity()">-</button> <button type="button" class="circle add-quantity-button" onclick=addQuantity()>+</button></td>
+            <td class="right" id=""total-amount">499.98$</td>
           </tr>
-          <tr>
+          <tr class="row">
             <td><form action="">
               <input class="circle" type="reset" value="x">
             </form></td>
             <td><a href="product.html" class="bluetext">Canon EOS 5D Mark II</a></td>
-            <td class="center">2999.99$</td>
-            <td class="center"><button type="button" class="circle" onclick="-1">-</button> 1 <button type="button" class="circle" onclick="+1">+</button></td>
-            <td class="right">2999.99$</td>
+            <td class="center prices">2999.99$</td>
+            <td class="center"><button type="button" class="circle remove-quantity-button quantity" onclick="removeQuantity()">-</button> <button type="button" class="circle add-quantity-button" onclick=addQuantity()>+</button></td>
+            <td class="right" id=""total-amount">2999.99$</td>
           </tr>
-          <tr>
+          <tr class="row">
             <td><form action="">
             <input class="circle" type="reset" value="x">
             </form></td>
             <td><a href="product.html" class="bluetext">Console Wii</a></td>
-            <td class="center">199.99$</td>
-            <td class="center"><button type="button" class="circle" onclick="-1">-</button> 15 <button type="button" class="circle" onclick="+1">+</button></td>
-            <td class="right">2999.85$</td>
+            <td class="center prices">199.99$</td>
+            <td class="center"><button type="button" class="circle remove-quantity-button quantity" onclick="removeQuantity()">-</button> <button type="button" class="circle add-quantity-button" onclick=addQuantity()>+</button></td>
+            <td class="right" id=""total-amount">2999.85$</td>
           </tr>
         </table>
         <hr>
         <br>
-        <p class="total">Total: <b>6499.82 $</b></p>
+        <p class="total">Total: <b>//</b></p>
         <br>
         <form class="empty" action="">
-          <input type="reset" class="btn" value="Vider le panier">
+          <input type="reset" class="btn" value="Vider le panier" id="remove-all-items-button">
           <input type="button" class="btn" value="Commander >>" onclick="window.location.href='./order.html'">
         </form>
       </div>
     </main>
   <div class="push"></div>
 </div>
+<script>
+  var a= document.getElementsByClassName("price")
+  document.getElementsByName("prices").innerHTML=a.innerHTML
+  
+  var b=document.getElementsByClassName("quantity")
+  a*b=document.getElementById("total-amount").innerHTML
 
+  function removeQuantity() {
+    document.getElementsByClassName("quantity") - 1= document.getElementsByClassName("quantity").innerHTML
+    document.getElementsByClassName("total-amount") - a*b= document.getElementsByClassName("total-amount").innerHTML
+    
+  }
+  function addQuantity() {
+    document.getElementsByClassName("quantity") + 1= document.getElementsByClassName("quantity").innerHTML
+    document.getElementsByClassName("total-amount") - a*b= document.getElementsByClassName("total-amount").innerHTML
+    
+  }
+  class remove-quantity-button {
+    if (quantity.value <= '1') {
+            bt.disabled = true;
+        }
+        else {
+            bt.disabled = false;
+        }
+  }
+  class remove-item-button{
+    if onclick():
+        if confirm("Voulez-vous supprimer le produit du panier?")==true:
+            document.getElementsByClassName("row")[].remove()
+  }
+  var a= document.getElementsByClassName("price")
+  document.getElementsByName("prices").innerHTML=a.innerHTML
+  
+  var b=document.getElementsByClassName("quantity")
+  a*b=document.getElementById("total-amount").innerHTML
+
+  if document.getElementsByClassName("tableau") == none:
+  document.getElementsByClassName("tableau").innerHTML="Aucun produit dans le panier"
+
+  #remove-all-items-button{
+    if onclick():
+        if confirm("Voulez-vous supprimer tous les produits du panier?")==true:
+        document.getElementsByClassName("tableau")[].remove()
+  } 
+</script>
 <footer class="footer">
     <p>Alexandra Morin (20236038), Vennila Sooben (20235256) et Melissa Le (20163210)</p>
 </footer>
