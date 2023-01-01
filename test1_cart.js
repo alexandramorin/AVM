@@ -7,6 +7,7 @@ const newid=[];
 $.getJSON("assets/data/products.json", 
 
 //localStorage.setItem("count",0),
+
 function(data){
 
    //localStorage.setItem("count",0)
@@ -100,6 +101,26 @@ newid.push(id[y])
         
         
         prod=addition(items[y])
+      
+        
+        if (document.getElementsByTagName("tbody")[1] !=null && document.getElementsByTagName("br")[1]!=null && document.getElementsByTagName("br")[2]!=null){
+            
+            const box = document.getElementsByTagName("tbody")[0];
+             box.remove()
+ 
+             const bo = document.getElementsByTagName("tbody")[0];
+             bo.remove()
+            const boxs = document.getElementsByTagName("br")[0];
+            boxs.remove()
+            const boxss = document.getElementsByTagName("br")[0];
+            boxss.remove()
+            const boxsss = document.getElementsByTagName("br")[0];
+            boxsss.remove()
+            
+            
+            }
+
+
 str=str+"\
 <tr class='remove1' id='forremoval"+prod+"'><td><form action=''>\
 <input class='circle' type='reset' value='x' onclick=removal('"+prod+"')>\
@@ -311,6 +332,7 @@ function allremoval(){
 
         }
     }
-    setTimeout(() => {start()}, 5);
+    start()
+    setTimeout(() => {start()}, 2);
 
 }
