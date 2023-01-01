@@ -1,3 +1,4 @@
+/* Alexandra Morin (20236038), Vennila Sooben (20235256) et Melissa Le (20163210) */
 const items=[];
 const item=[];
 const id=[];
