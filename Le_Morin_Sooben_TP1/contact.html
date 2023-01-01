@@ -7,7 +7,7 @@
   <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
   <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 </head>
-<body>
+<body onload="countShow()">
   <div class="wrapper">
     <header>
         <div class="content">
@@ -22,7 +22,7 @@
                   <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
                   <i class="fa fa-shopping-cart fa-stack-1x"></i>
                 </span>
-                <span class="count">3</span>
+                <span class="count" id="count"></span>
               </a></li>
           </ul>
           </nav>
@@ -66,6 +66,7 @@
   <footer class="footer">
       <p>Alexandra Morin (20236038), Vennila Sooben (20235256) et Melissa Le (20163210)</p>
   </footer>
-  <script type="text/javascript" src="./assets/js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type="text/javascript" src="./assets/scripts/storage.js"></script>
 </body>
 </html>

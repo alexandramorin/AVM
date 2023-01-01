@@ -1,3 +1,4 @@
+/* Alexandra Morin (20236038), Vennila Sooben (20235256) et Melissa Le (20163210) */
 //Code javascript pour la page Products.html
 
 //id=#'+val.id+'"/><h4>'
@@ -38,7 +39,7 @@ function alldone(){
                 <i class="fa fa-circle fa-stack-2x fa-inverse"></i>\
                 <i class="fa fa-shopping-cart fa-stack-1x"></i>\
               </span>\
-              <span class="count">3</span>\
+              <span class="count"></span>\
             </a></li>\
         </ul>\
         </nav>\

@@ -9,14 +9,14 @@
   <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 </head>
   
-<body> 
+<body onload="countShow()"> 
   <div class="wrapper">
     <header>
       <div class="content">
         <img class="logo" src="./assets/img/logo.svg" alt="Logo"/>
         <nav>
           <ul class="nav_links">
-            <li><a class="active" href="./index.html">Accueil</a></li>
+            <li><a href="./index.html">Accueil</a></li>
             <li><a href="./products.html">Produits</a></li>
             <li><a href="./contact.html">Contact</a></li>
             <li class="special"><a class="shopping-cart" href="./shopping-cart.html" title="Panier">
@@ -24,7 +24,7 @@
                 <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
                 <i class="fa fa-shopping-cart fa-stack-1x"></i>
               </span>
-              <span class="count">3</span>
+              <span class="count" id="count"></span>
             </a></li>
         </ul>
         </nav>
@@ -56,7 +56,7 @@
         <br>
         <form class="empty" action="">
           <input type="reset" class="btn" value="Vider le panier" id="remove-all-items-button" onclick="deleteAll()">
-          <input type="submit" class="btn" value="Commander >>" onclick="window.location.href='./order.html'">
+          <input type="submit" class="btn" value="Commander >>" id="removess" onclick="window.location.href='./order.html'">
           <div id="message-delete"><p>"Voulez vous supprimer tous les produits du panier ?</p>
         </form>
       </div>
@@ -65,6 +65,8 @@
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script type="text/javascript" src ="./assets/scripts/shopping-cart.js"></script>
+<script type="text/javascript" src="./assets/scripts/storage.js"></script>
+
 <footer class="footer">
     <p>Alexandra Morin (20236038), Vennila Sooben (20235256) et Melissa Le (20163210)</p>
 </footer>

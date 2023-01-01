@@ -6,8 +6,8 @@
   <meta name="keywords" content="computers">
   <title>OnlineShop - Confirmation</title>
   <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
-  <link rel="stylesheet" type="text/css" href="./assets/css">
-<body>
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+<body onload="show()">
 <div class="wrapper">
   <header>
     <div class="content">
@@ -22,7 +22,7 @@
                 <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
                 <i class="fa fa-shopping-cart fa-stack-1x"></i>
               </span>
-              <span class="count">3</span>
+              <span class="count"></span>
             </a></li>
           </ul>
         </nav>
@@ -32,19 +32,16 @@
     <div class="content">
       <br>
       <h1 id="name"></h1>
-        <script> var x = document.getElementById("name");
-        document.getElementByID("name").innerHTML = "Votre commande est confirmée" + x.innerHTML
-        </script>Votre commande est confirmée ID</h1>
+    
       <h3 id="confirmation-number"></h3>
-        <script> var x = document.getElementByID("confirmation-number");
-        document.getElementByID("confirmation-number").innerHTML = "Votre numéro de commande est le" + x.innerHTML
-        </script>
-      <h3> Merci beaucoup d'avoir magasiner dans notre boutique en ligne:)</h3><br>
+      <h3> Merci beaucoup d'avoir magasiné dans notre boutique en ligne:)</h3><br>
     </div>
   </main>
   <div class="push"></div>
 </div>
-<script type="text/javascript" src="./assets/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" src="./assets/scripts/confirmation.js"></script>
+
 <footer class="footer">
     <p>Alexandra Morin (20236038), Vennila Sooben (20235256) et Melissa Le (20163210)</p>
   </footer>

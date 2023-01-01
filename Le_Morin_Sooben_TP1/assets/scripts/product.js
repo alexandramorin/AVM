@@ -1,4 +1,4 @@
-
+/* Alexandra Morin (20236038), Vennila Sooben (20235256) et Melissa Le (20163210) */
 
 
 function start(){
@@ -40,7 +40,7 @@ function(data){
                 <i class="fa fa-circle fa-stack-2x fa-inverse"></i>\
                 <i class="fa fa-shopping-cart fa-stack-1x"></i>\
               </span>\
-              <span class="count">3</span>\
+              <span class="count"></span>\
             </a></li>\
         </ul>\
         </nav>\
@@ -62,7 +62,7 @@ function(data){
          boo=true  
          pass="f"
 
-         finalval=val.name 
+         finalId=val.id+"_cart"
 
    
 
@@ -140,21 +140,21 @@ function generateSticker(){
 
 
 
-c=localStorage.getItem(finalval)
-
+c=localStorage.getItem(finalId)
+var quantity
 if (c==null){
-  var quant = document.getElementById('quantity').value;
-  localStorage.setItem(finalval, quant);
+  quantity = document.getElementById('quantity').value;
+  localStorage.setItem(finalId, quantity);
 }
 if (c!=null){
-  var quantity = document.getElementById('quantity').value;
+  quantity = document.getElementById('quantity').value;
   console.log(quantity)
 
   let qua=parseInt(quantity)
   let c1=parseInt(c)
   qua=qua+c1
 
-  localStorage.setItem(finalval, qua);
+  localStorage.setItem(finalId, qua);
 }
 
 let msg=document.getElementById("message")

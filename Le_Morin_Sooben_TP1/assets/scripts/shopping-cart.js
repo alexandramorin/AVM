@@ -1,4 +1,5 @@
-let count = 0;
+/* Alexandra Morin (20236038), Vennila Sooben (20235256) et Melissa Le (20163210) */
+var count = 0;
 var itemsSorted = [];
       
 
@@ -22,23 +23,24 @@ function allDone(){
         }
     
     function count(){
+        let totalCount = 0;
         while (productIds < 12){
             var itemCount = parseInt(localStorage.getItem(productIds+"_cart"));
             if (localStorage.getItem(productIds+"_cart") != null){
-                count += itemCount;
+                totalCount += itemCount;
             }
             productIds ++;
     
         }
-        return count;
+        return totalCount;
         
     }    
     count = count();
-    if (count != 0){
+    if (count == 0){
         $("span.count").hide();
     }
     else{
-        $("#count").setItem(count);
+        document.getElementById('count').innerHTML=count
     }
     console.log(count)
     // trie les produits pour qu'ils soient en ordre alphabetique

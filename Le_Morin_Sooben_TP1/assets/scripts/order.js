@@ -45,18 +45,16 @@ $(document).ready(function(){
     // })
     
     let orderNumber = 1;
-    let  order = localStorage.getItem(orderNumber+"_order");
-    var customerInfo =[];
-    customerInfo.push(document.getElementById("firstname").value);
-    customerInfo.push(document.getElementById("lastname").value);
+    let order = localStorage.getItem(orderNumber+"_order");
+    const firstName = document.getElementById("firstname").value;
+    const lastName = document.getElementById("lastname").value;
 
     do {
         orderNumber++;
         order = localStorage.getItem(orderNumber+"_order");
     } while (order!=null);
     if (order==null){
-        localStorage.setItem(orderNumber+"_order", JSON.stringify(customerInfo));
-        console.log(quantity)
+        localStorage.setItem(orderNumber+"_order", JSON.stringify([firstName,lastName]));
     }
     
     
