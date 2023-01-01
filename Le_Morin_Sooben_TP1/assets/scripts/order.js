@@ -40,9 +40,24 @@ $(document).ready(function(){
         // on submit, need to keep the first and last name as well as the order number in local storage, remove all items in cart
 
     })
-    $registerForm.submit(function(e) {
-        e.preventDefault();
-    })
+    // $registerForm.submit(function(e) {
+    //     e.preventDefault();
+    // })
+    
+    let orderNumber = 1;
+    let  order = localStorage.getItem(orderNumber+"_order");
+    var customerInfo =[];
+    customerInfo.push(document.getElementById("firstname").value);
+    customerInfo.push(document.getElementById("lastname").value);
+
+    do {
+        orderNumber++;
+        order = localStorage.getItem(orderNumber+"_order");
+    } while (order!=null);
+    if (order==null){
+        localStorage.setItem(orderNumber+"_order", JSON.stringify(customerInfo));
+        console.log(quantity)
+    }
     
     
     
