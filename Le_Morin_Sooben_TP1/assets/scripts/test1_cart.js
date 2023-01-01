@@ -15,7 +15,7 @@ function(data){
     $.each(data, function (key, val) {
                                                  
         items.push(val.name);
-        item.push(parseFloat(val.price))
+        item.push(Number(val.price))
         id.push(val.id)
 
     });
@@ -28,9 +28,9 @@ function start(){
     var present=false
     var sum=0.0;
     var tot=0.0;
-    for (let y=0; y<items.length; y++){
-
-    let check=localStorage.getItem(items[y]);
+    for (let y=1; y<items.length; y++){
+    let itemToCheck = y+"_cart";    
+    let check=localStorage.getItem(itemToCheck);
 
         if (check!=null){
 
@@ -85,8 +85,8 @@ str="<div class='remove1'><tr>\
 ";
 
     for (let y=0; y<items.length; y++){
-
-        let m=localStorage.getItem(items[y])
+        let toCheck = y+"_cart";    
+        let m=localStorage.getItem(toCheck)
     if (m==null){
 
         newid.push(null)
@@ -240,7 +240,7 @@ function decr(m,y){
 
   
 
-   
+   let newSearch = y+"_cart";
     newword=search(y);
 
         localStorage.setItem(newword,parseInt(newquan));
