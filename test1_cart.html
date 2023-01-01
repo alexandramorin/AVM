@@ -1,0 +1,63 @@
+<!--Alexandra Morin (20236038), Vennila Sooben (20235256) et Melissa Le (20163210)-->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="computers">
+  <title>OnlineShop - Panier</title>
+  <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+</head>
+  
+<body> 
+  <div class="wrapper">
+    <header>
+      <div class="content">
+        <img class="logo" src="./assets/img/logo.svg" alt="Logo"/>
+        <nav>
+          <ul class="nav_links">
+            <li><a class="active" href="./index.html">Accueil</a></li>
+            <li><a href="./products.html">Produits</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li class="special"><a class="shopping-cart" href="./shopping-cart.html" title="Panier">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                <i class="fa fa-shopping-cart fa-stack-1x"></i>
+              </span>
+              <span class="count">3</span>
+            </a></li>
+        </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="content">
+        <br>
+        <h1> Panier </h1>
+        <br>
+        <hr>
+        <table class="tableau"><br>
+          
+         
+        </table>
+        <hr>
+       <br>
+        <p class="total"></p>
+        <br>
+       
+        <form class="empty" action="">
+          <input type="reset" display="" id="removesss" class="btn" value="Vider le panier" onclick=allremoval()>
+          <input type="button" display="" class="btn" id="removess" value="Commander >>" onclick="window.location.href='./order.html'">
+        </form>
+      </div>
+    </main>
+  <div class="push"></div>
+</div>
+
+<footer class="footer">
+    <p>Alexandra Morin (20236038), Vennila Sooben (20235256) et Melissa Le (20163210)</p>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="assets/scripts/cart.js"></script>
+</body>
+</html>
