@@ -1,0 +1,146 @@
+
+
+<!--Alexandra Morin (20236038), Vennila Sooben (20235256) et Melissa Le (20163210)-->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="computers">
+  <title>OnlineShop - Panier</title>
+  <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+</head>
+  
+<body> 
+  <div class="wrapper">
+    <header>
+      <div class="content">
+        <img class="logo" src="./assets/img/logo.svg" alt="Logo"/>
+        <nav>
+          <ul class="nav_links">
+            <li><a class="active" href="./index.html">Accueil</a></li>
+            <li><a href="./products.html">Produits</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li class="special"><a class="shopping-cart" href="./shopping-cart.html" title="Panier">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                <i class="fa fa-shopping-cart fa-stack-1x"></i>
+              </span>
+              <span class="count">3</span>
+            </a></li>
+        </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <script>
+        var quantiteAppleTV = 1
+        var quantiteCanon = 1
+        var quantiteConsole = 1
+      </script>
+      <div class="content">
+        <br>
+        <h1> Panier </h1>
+        <br>
+        <table class="tableau">
+          <tr class="row">
+            <th> </th> <!-- espace pour mettre le x -->
+            <th class="categorieleft">Nom</th>
+            <th class="categories">Prix unitaire</th>
+            <th class="categories">Quantité</th>
+            <th class="categorieright">Prix</th>
+          </tr>
+          <hr>
+          <tr class="row">
+            <td><form action="">
+              <input class="circle remove-item-button" type="reset" value="x">
+            </form></td>
+            <td><a href="product.html" class="bluetext">Apple TV</a></td>
+            <td class="center prices">249.99$</td>
+            <td class="center"><button type="button" class="circle remove-quantity-button quantity" onclick="removeQuantity()">-</button> <button type="button" class="circle add-quantity-button" onclick=addQuantity()>+</button></td>
+            <td class="right" id="total-amount">499.98$</td>
+          </tr>
+          <tr class="row">
+            <td><form action="">
+              <input class="circle" type="reset" value="x">
+            </form></td>
+            <td><a href="product.html" class="bluetext">Canon EOS 5D Mark II</a></td>
+            <td class="center prices">2999.99$</td>
+            <td class="center"><button type="button" class="circle remove-quantity-button quantity" onclick="removeQuantity()">-</button> <button type="button" class="circle add-quantity-button" onclick=addQuantity()>+</button></td>
+            <td class="right" id="total-amount">2999.99$</td>
+          </tr>
+          <tr class="row">
+            <td><form action="">
+            <input class="circle" type="reset" value="x">
+            </form></td>
+            <td><a href="product.html" class="bluetext">Console Wii</a></td>
+            <td class="center prices">199.99$</td>
+            <td class="center"><button type="button" class="circle remove-quantity-button quantity" onclick="removeQuantity()">-</button> <button type="button" class="circle add-quantity-button" onclick=addQuantity()>+</button></td>
+            <td class="right" id="total-amount">2999.85$</td>
+          </tr>
+        </table>
+        <hr>
+        <br>
+        <p class="total">Total: <b>//</b></p>
+        <br>
+        <form class="empty" action="">
+          <input type="reset" class="btn" value="Vider le panier" id="remove-all-items-button">
+          <input type="button" class="btn" value="Commander >>" onclick="window.location.href='./order.html'">
+        </form>
+      </div>
+    </main>
+  <div class="push"></div>
+</div>
+<script>
+  // var a= document.getElementsByClassName("price")
+  // document.getElementsByName("prices").innerHTML=a.innerHTML
+  
+  // var b=document.getElementsByClassName("quantity")
+  // a*b=document.getElementById("total-amount").innerHTML
+
+  // function removeQuantity() {
+  //   document.getElementsByClassName("quantity") - 1= document.getElementsByClassName("quantity").innerHTML
+  //   document.getElementsByClassName("total-amount") - a*b= document.getElementsByClassName("total-amount").innerHTML
+    
+  // }
+  // function addQuantity() {
+  //   document.getElementsByClassName("quantity") + 1= document.getElementsByClassName("quantity").innerHTML
+  //   document.getElementsByClassName("total-amount") - a*b= document.getElementsByClassName("total-amount").innerHTML
+    
+  // }
+  // class remove-quantity-button {
+  //   if (quantity.value <= '1') {
+  //           bt.disabled = true;
+  //       }
+  //       else {
+  //           bt.disabled = false;
+  //       }
+  // }
+  // class remove-item-button{
+  //   if onclick():
+  //       if confirm("Voulez-vous supprimer le produit du panier?")==true:
+  //           document.getElementsByClassName("row")[].remove()
+  // }
+  // var a= document.getElementsByClassName("price")
+  // document.getElementsByName("prices").innerHTML=a.innerHTML
+  
+  // var b=document.getElementsByClassName("quantity")
+  // a*b=document.getElementById("total-amount").innerHTML
+
+  // if (document.getElementsByClassName("tableau") == none){
+  //   document.getElementsByClassName("tableau").innerHTML="Aucun produit dans le panier"
+  // }
+  
+  // #remove-all-items-button{
+  //   if onclick():
+  //       if confirm("Voulez-vous supprimer tous les produits du panier?")==true:
+  //       document.getElementsByClassName("tableau")[].remove()
+  // } 
+</script>
+<script src ="/assets/scripts/shopping-cart.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<footer class="footer">
+    <p>Alexandra Morin (20236038), Vennila Sooben (20235256) et Melissa Le (20163210)</p>
+</footer>
+</body>
+</html>
